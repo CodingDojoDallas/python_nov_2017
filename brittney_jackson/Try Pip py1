@@ -1,0 +1,29 @@
+pip install Django
+	// This command installed the framework that is Django. 
+
+pip list
+	//This command shows the list of installed packages in column formatting
+
+pip install Django 
+	//returns information that Django is already installed. 
+
+pip freeze 
+	//This command shows the list of packages in the requirements formats...details the version tyo that must be installed to run. difference: Freeze lets you know where you should be as opposed to the list detailing where you are. 
+
+pip freeze > requirements.txt. 
+	// This command creates a document detailing the required packages. WHen you ls you see the created files and the content is whats listed above.
+
+
+pip uninstall Django
+	//uninstalls previously installed package.
+
+
+pip show Django
+	//Shows the version of the package that is currently installed.
+
+
+pip search Flask
+	//shows list of flask packages that could potentially be installed.
+
+
+
