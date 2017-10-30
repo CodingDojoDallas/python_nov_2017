@@ -1,0 +1,37 @@
+1. pip install Django  ->This will download and install the latest Django release
+
+2. pip list  -> List installed packages, including editables.
+
+3.pip install Django --> (i).Collecting Django using cashed Django-1.11.6-py3-none-any.whl
+ (ist Time when i run	 (ii).Installing collected packages: 
+			 (iii).Django Successfully installed Django-1.11.6
+
+3. Pip install Djang(run again) 	(i).Requirement already satisfied: Django in c:\python27\lib\site-packages
+					(ii).Requirement already satisfied: pytz in c:\python27\lib\site-packages (from Django)
+
+
+
+4. Different B/w pip list and pip freez . 
+ (pip-list)-> List installed packages, including editables.
+Output content, pip list include editables which pip freeze does not
+
+pip freez) ->Output installed packages in requirements format.
+Output format, freeze gives us the standard requirement format 
+that may be used later with pip install -r to install requirements from.   
+
+
+5.pip freeze > requirements.txt
+when i run this command it make a requirement file on my desktop 
+and inside the file file give me outputs all the currently installed 
+		python packages and their versions likw Django==1.11.6,pytz==2017.3
+
+
+
+6.pip uninstall Django unistalling Django the all packages in Django
+
+7.pip show Django -> its show the Version,Summery,Home-page,Author,Author-email,Licence
+		     Location,Requirement,
+
+8 pip search Flask -->  this generate list of all packages in Flask
+
+ 
