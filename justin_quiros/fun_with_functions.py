@@ -1,5 +1,5 @@
 def odd_even():
-	for x in range(1, 21):
+	for x in range(1, 2001):
 		if x % 2 == 0:
 			print "Number is", x,"This is an even number."
 		else:
@@ -17,10 +17,10 @@ print multiply([2,3,5,6], 5)
 
 
 def layered_multiples(arr):
-   	print arr
+   	#print arr
    	new_arr1 = []
    	for x in arr:
-   		#print x
+   		print x
    		new_arr2 = []
    		#print new_arr2
    		for y in range(0, x):
