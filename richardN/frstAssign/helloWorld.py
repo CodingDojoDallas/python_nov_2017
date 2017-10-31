@@ -138,3 +138,7 @@ for val in "string":
   if val == "i":
     continue
   print val
+
+'''
+pass is used to nullify a statment or line of code
+'''
