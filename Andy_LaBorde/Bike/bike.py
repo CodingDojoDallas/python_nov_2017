@@ -1,3 +1,4 @@
+
 class bike(object):
 	def __init__(self, price, max_speed):
 		self.price = price
