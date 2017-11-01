@@ -19,13 +19,26 @@ class Bike(object):
 	def reverse(self):
 		print "Reversing!"
 		self.miles -= 5
+		if self.miles <0:
+			self.miles = 0
 		return self
 
 		
 
-newBike = Bike(200,'20mph')
+newBike1 = Bike(200,'20mph')
 
-newBike.displayInfo()
-newBike.ride().ride().ride().reverse()
-newBike.displayInfo()
+newBike1.ride().ride().ride().reverse()
+newBike1.displayInfo()
+
+newBike2 = Bike(400,'30mph')
+
+newBike2.ride().ride().reverse().reverse()
+newBike2.displayInfo()
+
+newBike3 = Bike(50,'5mph')
+
+newBike3.reverse().reverse().reverse()
+newBike3.displayInfo()
+
+
 
