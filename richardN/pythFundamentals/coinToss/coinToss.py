@@ -5,7 +5,7 @@ def coinToss(num):
     heads = 0
     tails = 0
     results = ""
-    counter = ""
+    count = 0
 
     for x in range(1,num):
         toss = random.randint(0,1)
