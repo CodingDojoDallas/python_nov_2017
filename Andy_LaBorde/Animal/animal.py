@@ -34,8 +34,8 @@ class Dragon(animal):
 		self.health -= 10
 		return self
 	def disHealth(self):
-		# super(Dragon, self).disHealth()
-		print "Your {}'s HP is now {}".format(self.name, self.health)
+		super(Dragon, self).disHealth()
+		# print "Your {}'s HP is now {}".format(self.name, self.health)
 		print "I'm a Dragon Biiiish!!"
 dragon1 = Dragon('Charizard')
 dragon1.fly().disHealth()
@@ -49,8 +49,6 @@ class Pig(animal):
 
 pig1 = Pig('Porky')
 pig1.run().run().walk().run().run().walk().run().run().walk().squeal().disHealth()
-
-
 
 
 
