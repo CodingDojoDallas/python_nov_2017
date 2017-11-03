@@ -6,7 +6,6 @@ strngList = ['magical','unicorns']
 def identMixType(lst):
     newList = ''
     total = 0
-
     intger = 0
     string = 0
 
@@ -26,7 +25,7 @@ def identMixType(lst):
     else:
         print "the array is just numbers"
     print "string:" + newList
-    print "total:", total
+    print "total:", (sum(numList))
 
 identMixType (strngList)
 
