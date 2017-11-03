@@ -1,0 +1,8 @@
+1. learned to preface all pop commands with "python -m", it installed Django along with pytz witch is from Django
+2.  Showed all the installed programs I have done including the setuptools
+3. Says that the requirments are already satisfied for both Django and pytz
+4. Freeze shows the version of the pip installed programs
+5. There was a file created called requriements.txt on my desktop and inside it had the same information as if i just called freeze outside of my desktop
+6. It listed a bunch of file paths and asked if I wanted to proceed, then it uninstalled Django
+7. Dosent show anything
+8. Shows a bunch of Flask versions
