@@ -1,0 +1,82 @@
+
+body{
+	background-color: gray;
+	font-family: arial;
+}
+.title{
+	color:purple;
+	font-size: 40px;
+	display: block;
+	text-align: center;
+	
+}
+
+img{
+	width: 300px;
+	height: 300px;
+	margin-left: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: block;
+}
+
+p{
+	color:white;
+	display: inline-block;
+	margin: 0 0 0 0;
+}
+
+ul li{
+	color: white;
+	font-size: 30px
+}
+
+label{
+	color: purple;
+	font-size: 20px;
+	margin-left: 20%;
+	vertical-align: center;
+	
+}
+h1{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+}
+
+h2{
+	margin-left: 100px;
+}
+
+input, select, textarea{
+	border:2px solid black;
+	border-radius: 5px;
+	margin-right: 35%;
+	margin-bottom: 20px;
+	width: 200px;
+}	
+#comment{
+	height: 100px;
+	margin-bottom: 0;
+	display: inline-block;
+	vertical-align: top;
+
+}
+button{
+	background-color: black;
+	color:white;
+	border:2px solid black;
+	border-radius: 20px;
+	display: block;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+.container{
+	border:2px solid black;
+	margin:50px 100px 100px 50px;
+}
