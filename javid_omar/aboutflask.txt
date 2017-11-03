@@ -1,0 +1,32 @@
+	pip install Django
+Installed Django 
+
+	pip list
+Lists installed packages, including editables, and their version number
+
+	Pip install Django(second time) responded with:
+Requirement already satisfied: django in /usr/local/lib/python2.7/site-packages
+Requirement already satisfied: pytz in /usr/local/lib/python2.7/site-packages (from django)
+
+	pip Freeze
+Outputs installed packages in requirements format.
+
+	pip uninstall Django
+Uninstalled Django
+
+	pip show Django
+Name: Django
+Version: 1.11.6
+Summary: A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+Home-page: https://www.djangoproject.com/
+Author: Django Software Foundation
+Author-email: foundation@djangoproject.com
+License: BSD
+Location: /usr/local/lib/python2.7/site-packages
+Requires: pytz
+
+	requirements.txt
+Showed the same output as pip freeze but in a txt file.
+
+	pip search Flask
+Output all packages with flask in the name and a description.
