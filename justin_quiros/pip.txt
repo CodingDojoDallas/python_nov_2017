@@ -1,0 +1,18 @@
+Open up terminal
+
+pip install Django - this will install the Django framework
+
+pip list - displays a list of installed modules
+
+pip install Django - Requirement already satisfied: Django in /usr/local/lib/python2.7/site-packages
+
+Requirement already satisfied: pytz in /usr/local/lib/python2.7/site-packages (from Django)
+We have already installed this framework and the message in our terminal has described this above
+
+pip freeze - outputs installed packages in requirements format - The requirements file on my desktop is showing what was dispalyed in my terminal.  pip freeze = Output installed packages in requirements format | pip list = List installed packages
+
+pip uninstall Django - unistalled Django and asked for confirmation 
+
+pip show Django - did not output any information due to Django not being installed
+
+pip search Flask - Search for PyPI packages whose name or summary contains <query>
