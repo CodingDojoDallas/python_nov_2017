@@ -1,0 +1,10 @@
+Erbold's 'Try Pip' Assignment
+
+-pip install Django: i installed Django
+-pip list: shows me the programs that's already preprogrammed into pip it looks like
+-pip install Django: installed already is what its showing
+-pip freeze: freeze gives me the double equal sign 
+-pip freeze > requirements.txt: when i ls inside this file it just gives me a regular list
+-pip uninstall Django: gave me a long section of code and then froze so i restarted Git Bash
+-pip show Django: shows me the info about Django that i have on my machine
+-pip search Flask: this file opens up a long line of text showing me the info about Flask

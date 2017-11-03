@@ -1,0 +1,25 @@
+Sometimes in OOP code, you want to create updated versions of methods that are defined in parent class
+- b/c in addition to your custom code you want specifically to call parent implementation of method as well (or instead)
+
+- refer to parent object with keyword 'super'
+
+can reference parent's method with
+super(ChildClassName, self).parent_method()
+
+Parent __init__
+- we may want to call parent's __init__
+- but also have Child change attributes defined by its Parent class
+- want subclasses to inherit attributes of parent, but also more developed attributes
+
+
+start out with 
+
+from parent_dir import Parent
+    class Child(Parent):
+        def __init__(self):
+            super(Child, self).__init__()
+            self.attribute = something
+
+so can see, has same attributes as Parent, but also different attributes depending on subclasses
+- called __init__ method of super(parent)
+- other methods are called same way with exception of passing in variables

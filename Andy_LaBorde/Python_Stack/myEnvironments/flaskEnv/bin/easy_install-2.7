@@ -1,0 +1,11 @@
+#!/Users/Haymonizer/Desktop/DojoAssignments/python_nov_2017/Andy_LaBorde/Python_Stack/myEnvironments/flaskEnv/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from setuptools.command.easy_install import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

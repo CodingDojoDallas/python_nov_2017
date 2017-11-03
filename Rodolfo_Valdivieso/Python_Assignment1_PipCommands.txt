@@ -1,0 +1,7 @@
+pip install Django    ===> pip is a management system to install and manage Python packages, so in this case we are installing Django, wich is written in Python.
+pip list              ===> this command will tel you all the python packages you have installed
+pip install Django    ===> If you try to install the same packge twice, pip will actually gives you the message that the package already exists.
+pip freeze            ===> Freeze is a command used to output installed packages excluding editables and list includes everything.
+pip uninstall Django  ===> Allows you to uninstall a python package.
+pip show Django       ===> Gives you a description of the packages and basic info.
+pip search Flask      ===> It returns a list of packages that contains the string in their names or summaries.

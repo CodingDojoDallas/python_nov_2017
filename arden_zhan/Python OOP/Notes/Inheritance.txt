@@ -1,0 +1,18 @@
+Inheritance is forming new classes using classes that have already been defined.
+- lets one class to take some / all of its attributes / methods from a parent class
+- derived classes (descendants) can override / extend functionality of base classes (ancestors)
+
+Looking back, could have made Vehicle parent classes for Bike and Car classes. (airplane)
+- subclasses useful for creating more specialized version of current classes.
+- specialized class means that current functionality will mostly remain same, with minor adjustments
+- class interface means we don't have to repeat ourselves
+
+Implicit Inheritance
+- the subclasses use all functions/properties of parent class, but also have their own additional functions and properties
+- inherit parent blueprint, also have their own blueprint
+
+class Parent(object): # inherits from the object class
+  # parent methods and attributes here
+class Child(Parent): #inherits from Parent class so we define Parent as the first parameter
+  # parent methods and attributes are implicitly inherited
+  # child methods and attributes

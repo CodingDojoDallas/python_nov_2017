@@ -1,0 +1,50 @@
+
+body{
+	background-color: gray;
+	font-family: arial;
+}
+.title{
+	color:purple;
+	font-size: 40px;
+	display: block;
+	text-align: center;
+	
+}
+
+.imagen{
+	width: 300px;
+	height: 300px;
+	margin-left: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(github.png);
+	display: block;
+}
+
+ul li{
+	color: white;
+	font-size: 30px
+}
+label{
+	color: purple;
+	font-size: 20px;
+	margin-left:450px;
+}
+
+input{
+	border:2px solid black;
+	border-radius: 20px;
+	margin-right: 500px;
+
+	
+}
+button{
+	background-color: black;
+	color:white;
+	border:2px solid black;
+	border-radius: 20px;
+	display: block;
+	margin-left: 45%;
+	margin-top: 20px;
+}

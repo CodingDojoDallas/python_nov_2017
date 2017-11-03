@@ -1,0 +1,78 @@
+1)  pip install Django:  Django is a Python framework designed to make web development faster
+  e.g.
+  “Collecting Django
+  Downloading Django-1.11.6-py2.py3-none-any.whl (6.9MB)
+    100% |████████████████████████████████| 7.0MB 160kB/s 
+  Collecting pytz (from Django)
+  Downloading pytz-2017.3-py2.py3-none-any.whl (511kB)
+    100% |████████████████████████████████| 512kB 1.5MB/s 
+  Installing collected packages: pytz, Django
+  Successfully installed Django-1.11.6 pytz-2017.3
+
+	  Pytz allows accurate and cross platform timezone calculations using 	Python 2.4 or higher. It also solves the issue of ambiguous times at 	the end of daylight saving time.
+
+2) pip list: Lists installed packages in case sensitive order
+  e.g.
+  Michaels-MacBook-Air-2:~ bamabrugge$ pip list
+  DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+  click (6.7)
+  Django (1.11.6)
+  Flask (0.12.2)
+  itsdangerous (0.24)
+  Jinja2 (2.9.6)
+  MarkupSafe (1.0)
+  pip (9.0.1)
+  pytz (2017.3)
+  setuptools (36.6.0)
+  Werkzeug (0.12.2)
+  wheel (0.30.0)
+
+
+3) pip install Django: tells me that I already have Django and pytz
+  e.g.
+  Requirement already satisfied: Django in /usr/local/lib/python2.7/site-packages
+  Requirement already satisfied: pytz in /usr/local/lib/python2.7/site-packages (from Django)
+
+
+4) pip freeze: while “pip list” lists installed packages, “pip freeze” outputs installed packages in requirements format.  “Requirement” files allow us to create an “environment:” a set of packages that work together.
+  e.g.
+  Michaels-MacBook-Air-2:~ bamabrugge$ pip freeze
+  click==6.7
+  Django==1.11.6
+  Flask==0.12.2 
+  itsdangerous==0.24
+  Jinja2==2.9.6
+  MarkupSafe==1.0
+  pytz==2017.3
+  Werkzeug==0.12.2
+
+
+5) pip uninstall Django:  there were a ton of files/packages that uninstalled…..too many to copy here :)
+  e.g.
+  Proceed (y/n)? y
+  Successfully uninstalled Django-1.11.6
+
+6) pip show Django: nothing returned after I uninstalled.
+	After I reinstalled, I get basic information returned to me. 
+  e.g.
+	Name: Django
+  Version: 1.11.6
+  Summary: A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+  Home-page: https://www.djangoproject.com/
+  Author: Django Software Foundation
+  Author-email: foundation@djangoproject.com
+  License: BSD
+  Location: /usr/local/lib/python2.7/site-packages
+  Requires: pytz
+
+
+7) pip search Flask: search that generates all packages with the term “flask” in either the name or description of the package.
+	e.g.
+	Michaels-MacBook-Air-2:desktop bamabrugge$ pip search Flask
+  Flask-User-05 (0.5)                            - Customizable User Account Management
+                                                 for Flask: Register, Confirm email,
+                                                 Login, Change username, Change
+                                                 password, Forgot password and more.
+  flask-restless-swagger-2 (0.0.3)               - Magically create swagger documentation
+                                                 as you magically create your RESTful
+                                                 API

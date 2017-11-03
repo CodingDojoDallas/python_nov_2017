@@ -1,0 +1,29 @@
+Modules
+    - python files with .py extension, implement a set of functions
+    - imported using the import command
+    - initialized by executing code in module once
+    
+Built-in Modules
+
+dir and help are useful for exploring python modules
+dir - lets us look for which functions are implemented in each module
+
+Packages
+- a collection of modules in directories that give a package hierarchy
+from my_package.subdirectory import my_functions
+
+Writing Packages
+- each package is a directory. MUST contain __init__.py
+- __init__.py can be empty, and it indicates the directory is a python package, must be imported same way module can be imported
+
+- directory 'my_modules' is the package name.
+- module inside package called test_module (test_module.py ?????)
+- __init__.py goes inside my_modules directory
+
+Can either use import my_modules.test_module
+OR
+from my_modules import test_module
+
+__init__.py can also be used to decide which modules in package will export as API, while keeping other modules internal, by overriding the _all__ variable
+__init__.py:
+__all__ = ["test_module"]

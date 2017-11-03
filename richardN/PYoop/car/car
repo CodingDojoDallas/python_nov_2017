@@ -1,0 +1,58 @@
+class car(object):
+
+    def __init__(self, price, speed, fuel, mileage):
+        self.price =price
+        self.speed =speed
+        self.fuel =fuel
+        self.mileage =mileage
+        if price > 10000:
+            self.tax =.15
+        else:
+            self.tax =.12
+        self.display_all()
+
+    def display_all(self):
+        print 'price' + str(self.price)
+    #    print
+    #    print
+    #    print
+    #    print
+
+
+
+
+Price: 12000
+Speed 60mph
+Fuel: Full
+Mileage: 15mpg
+Tax: 0.15
+
+Price: 20000
+Speed: 85mph
+Fuel: Not Full
+Mileage: 105mpg
+Tax: 0.15
+
+Price: 2000
+Speed: 15mph
+Fuel: Kind of Full
+Mileage: 95mpg
+Tax: 0.12
+
+Price: 9000
+Speed: 55mph
+Fuel: Full
+Mileage: 25mpg
+Tax: 0.12
+
+Price: 2000
+Speed: 45mph
+Fuel: Empty
+Mileage: 25mpg
+Tax: 0.12
+
+Price: 20000000
+Speed: 315mph
+Fuel: Empty
+Mileage: 15mpg
+Tax: 0.15

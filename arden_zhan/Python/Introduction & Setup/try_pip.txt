@@ -1,0 +1,8 @@
+pip install - installs packages
+pip list - lists installed packages
+pip install (dupe package) - requirement already satisfied, so don't need to install again
+pip freeze - output installed packages in requirements format. Similar to list, except lists in a requirements format
+pip freeze > requirements.txt - creates a file and the freeze outputs into the file
+pip uninstall Django - uninstalls package. Git Bash doesn't display prompts, so have to click 'y' yourself. 
+pip show - shows info about package, but blank if package isn't installed
+pip search <query> - searches packages whose name/summary contains <query>. Listed all the packages

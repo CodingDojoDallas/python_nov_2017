@@ -1,0 +1,63 @@
+richardnamkoong@RichNamk-2:/$ pip install Django
+Collecting Django
+  Downloading Django-1.11.6-py2.py3-none-any.whl (6.9MB)
+    100% |████████████████████████████████| 7.0MB 199kB/s 
+Collecting pytz (from Django)
+  Downloading pytz-2017.3-py2.py3-none-any.whl (511kB)
+    100% |████████████████████████████████| 512kB 2.5MB/s 
+Installing collected packages: pytz, Django
+Successfully installed Django-1.11.6 pytz-2017.3
+richardnamkoong@RichNamk-2:/$ 
+* Installs package
+
+richardnamkoong@RichNamk-2:/$ pip list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+Django (1.11.6)
+pip (9.0.1)
+pytz (2017.3)
+setuptools (28.8.0)
+* Lists installed packages
+
+richardnamkoong@RichNamk-2:/$ pip install Django
+Requirement already satisfied: Django in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+Requirement already satisfied: pytz in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (from Django)
+* Action not preformed, since it is already installed 
+
+richardnamkoong@RichNamk-2:/$ pip freeze
+Django==1.11.6
+pytz==2017.3
+* Outputs all the currently installed python packages and their versions.
+* pytz is current time zone? Imports world time list data and how to calculate timezone differences.
+
+richardnamkoong@RichNamk-2:~$ pip freeze > requirements.txt
+richardnamkoong@RichNamk-2:~$ 
+* pip freeze > requirements.txt didn't show anything. Is it because the file is missing?
+
+richardnamkoong@RichNamk-2:~$ ls
+(null)            Desktop/          Downloads/        Movies/           Pictures/         requirements.txt
+Applications/     Documents/        Library/          Music/            Public/           testdisk.log
+richardnamkoong@RichNamk-2:~$ 
+* pip freeze > requirements.txt created the file? It generates required files needed
+
+richardnamkoong@RichNamk-2:/Volumes/MicroSD/Coding Dojo/Python/python_nov_2017$ pip uninstall Django
+Uninstalling Django-1.11.6:
+  /Library/Frameworks/Python.framework/Versions/2.7/bin/django-admin
+  /Library/Frameworks/Python.framework/Versions/2.7/bin/django-admin.py
+  /Library/Frameworks/Python.framework/Versions/2.7/bin/django-admin.pyc
+  ....
+  Proceed (y/n)? y
+  Successfully uninstalled Django-1.11.6
+*Uninstalled Django
+
+richardnamkoong@RichNamk-2:/Volumes/MicroSD/Coding Dojo/Python/python_nov_2017$ pip show Django
+richardnamkoong@RichNamk-2:/Volumes/MicroSD/Coding Dojo/Python/python_nov_2017$ 
+* Nothing to show since Django was uninstalled
+
+richardnamkoong@RichNamk-2:/Volumes/MicroSD/Coding Dojo/Python/python_nov_2017$ pip search Flask
+Flask-User-05 (0.5)                            - Customizable User Account Management for Flask: Register,
+                                                 Confirm email, Login, Change username, Change password,
+                                                 Forgot password and more.
+.....
+* pip search finds all instances of the 'keyword' associated within its database.
+
+
