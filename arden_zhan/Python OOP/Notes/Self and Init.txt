@@ -1,0 +1,19 @@
+Self and __init__()
+
+Class: instructions for how to build many objects that share characteristics
+Object: data type built according to specifications provided by class definition
+Attribute: value. kind of like a variable that is stored within an objects
+Method: set of instructions. functions associated with an object
+
+Self
+The first parameter in our methods will be self. Do not need to pass arguments, self has implicit passage.
+We can change state of single object by making modifications to self.
+Self parameter includes all the info about the individual object that has called the method.
+Without self, every time we changed a object's attributes, we'd be changing the attribute for all the items of that type. 
+Self is for specific object
+
+__init__()
+__init__() is a magic method. Magic method are automatically created and sometimes invoked when new instances of a class are created. __init__ is one we'll be working with in most classes
+
+    - useful because it allows us to set some attributes when new instance is created. ran immediately, so we can pass params through it upon object creation
+

@@ -1,0 +1,29 @@
+OOP (Object Oriented Programming)
+    - saves time
+    - avoids repeating code
+    - easier maintenance
+    - more organized and modular
+
+OOP and the Web
+OOP allows us to create a blueprint for reproducing objects. 
+
+User class
+The blueprint for each user just tells what attributes we need to track for each user. Every user doesn't have to be the same.
+
+Class Structure
+class User(object):
+    pass
+
+object parameter means that the class inherits from the object class
+pass means do nothing
+
+def __init__(self):
+#__init__ method is called every time a new object created
+new object creation includes passing parameters. everything we pass is passed into the init method
+
+After creating the user class blueprint, we create instances of the class
+
+Classes include 2 things
+    - attributes: characteristics shared by all instances of class
+    - methods: actions that the object can perform
+storage of info, and ability to execute some logic

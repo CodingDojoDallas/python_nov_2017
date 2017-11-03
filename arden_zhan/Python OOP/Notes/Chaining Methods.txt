@@ -1,0 +1,21 @@
+Can do multiple method calls by attaching to end of previous one
+user1.login().show().logout()
+instead of 
+user1.login()
+user1.show()
+user1.logout()
+
+jQuery also lets us chain. 
+since user1.login() returns user1 instance, then you can do (user1.login()).show(), which chains
+
+Self refers to individual instance of the object
+class User(object):
+    def login(self):
+        //code
+        return self
+
+return self
+- returns its own instance which allows chaining methods after calling that method
+
+OOP returning its own instance is common and can be done in other languages too.
+some languages return this, instead of python's return self
