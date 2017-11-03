@@ -1,0 +1,31 @@
+open MySQL Workbench
+right click - select open connection
+
+to use a database either type "Use twitter" or select it in the schemas view
+
+Example Commands
+select * from users
+ //select all rows (users) from the users table
+
+select first_name from users //displays only the first names for each user in the users table
+
+select last_name as "Last Name" from users  //displays the last name but for each user but gives the title of the column as "Last Name" instead of "last_name"
+
+select * from users where id >3 //only displays the users whos id is greater than 3
+
+select * from users where id >3 order by first_name  //same as above but orders alphabetically.
+
+SELECT concat_ws(" ",first_name,last_name, id)
+FROM users  //selects first name, last name, and id and puts them in a single string with a " " between them
+
+SELECT *
+FROM users
+LEFT JOIN tweets
+ON users.id = tweets.user_id
+  //Joins the user and tweets table (including those people who have 0 tweets)
+
+SELECT *
+FROM users
+ JOIN tweets
+ON users.id = tweets.user_id
+  //Joins but excludes those who don't have a match in the 2nd table

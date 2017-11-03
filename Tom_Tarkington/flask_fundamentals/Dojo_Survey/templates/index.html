@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>index page</title>
+</head>
+<body>
+	<br />
+	<br />
+
+	<form action="/result" method="POST"><!--goes to result.html-->
+		Your Name: <input type="text" name="name"><br />
+		Dojo Location:
+		<select name="location">
+			<option value="San Jose">San Jose</option>
+			<option value="Dallas">Dallas</option>
+			<option value="New York">New York</option>
+			<option value="Seattle">Seattle</option>
+		</select><br />
+		Dojo Location: 
+		<select name="language">
+			<option value="English">English</option>
+			<option value="Bad English">Bad English</option>
+		</select><br />
+		Comment (optional):
+		<div>
+			<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;"></textarea>
+		</div>
+				<input type="submit" value="Button">
+
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				{% for message in messages %}
+					<p>{{message}}</p>
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+
+</form>
+</body>
+</html>
