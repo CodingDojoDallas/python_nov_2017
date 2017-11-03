@@ -20,7 +20,7 @@ class Bike(object):
 		print "Reversing!"
 		self.miles -= 5
 		if self.miles <0:
-			self.miles = 0
+			self.miles =0
 		return self
 
 		
