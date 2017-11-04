@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Great Number Game</title>
+</head>
+<body>
+	<h3>Welcome to the Great Number Game!</h3>
+	<p>I am thinking of a number between 1 and 100</p>
+	<p>{{session['disp']}}</p>
+	<img src="../static/image/{{image}}"> 
+		<p>Your last guess was: {{session['number']}}</p>
+	<form action="/guess" method="post">
+		<input type="text" name="number">
+		<button name="submit" method="post">Submit</button>
+	</form>
+	<form action="/again" method="post">
+		<button name="again" method="post">Play Again</button>
+	</form>
+</body>
+</html>
+
+
+<!-- {{session['counter']}} -->
