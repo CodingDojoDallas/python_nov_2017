@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Validation</title>
+</head>
+<body>
+  
+  <p>Advanced Validation Example</p>
+  <p>Enter a Valid Email!</p>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        {{message}}
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  
+  <form action='/process' method='POST'>
+    Email:<input type="text" name="email">
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
