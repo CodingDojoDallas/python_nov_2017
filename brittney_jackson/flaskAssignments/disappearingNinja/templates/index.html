@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Landing Page</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Hey Girl, Hey!</h1>
+				<p>Welcome to my lady ninja page!</p>
+				<a href="/ninjas">Lady Ninja Info</a>
+				<h3> | </h3>
+				<a href="/dojo/now">Subscribe!</a>
+			</div>
+			
+			<img src="{{url_for('static', filename='index/img/ninjaLady.jpg')}}" alt="NinjaLady">
+		</div>
+
+	</body>
+</html>
