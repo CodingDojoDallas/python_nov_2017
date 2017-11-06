@@ -1,0 +1,12 @@
+body{
+	background: teal
+}
+#container{
+	width: 1000px;
+	margin: auto;
+	border: 5px solid silver;
+	padding: 10px;
+	background: black;
+	color: teal;
+	text-align: center;
+}
