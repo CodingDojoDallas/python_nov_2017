@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <title>Form Test Index</title>
+    </head>
+    <body>
+      <h1>Index Page</h1>
+      <h3>Create a User</h3>
+<!-- read on to learn about form actions, we'll talk about the method in a later section -->
+      <form action='/users' method='post'>
+<!--The method attribute
+There are two values that you will see this attribute being set to: GET and POST. If you remember HTTP requests, then you will remember that GET and POST are the two types of HTTP request methods that are most common. In addition to serving pages, a GET request is for insensitive information and a POST request is for passing sensitive information.
+The method attribute specifies the type of HTTP request by how you, as the developer, want to have your form information transferred. If your form data contains password data, credit card numbers, SSNs, etc, please use POST! If the information is like a library search or something insensitive, it's OK to use GET as your method.
+In general, you should associate forms with the POST method (in most cases), and sending responses with the GET method.-->
+          Name: <input type='text' name='name'>
+          Email: <input type='text' name='email'>
+          <input type='submit' value='create user'>
+<!--The input element(each must be assigned a 'name' element)
+The form tag will set up all of the logistics, but the information you want to gather will be harvested from the elements you place within the form. In our basic example, we have just one type of input, a text field. There are several different input types that can gather data:
+
+text - a basic collector for text
+radio button - when you want the user to select from a number of options
+password - like text but the text entered will be disguised (as circles!)
+checkbox - when a user must be prompted for a yes or no type argument-->
+      </form>
+    </body>
+</html>
