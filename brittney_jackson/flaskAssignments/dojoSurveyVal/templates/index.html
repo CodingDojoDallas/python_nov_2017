@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Survey</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>What's Your Fav...</h1>
+			</div>
+			<div id="form">
+				{% with messages = get_flashed_messages() %}
+				    {% if messages %}
+				      {% for message in messages %}
+				        <p>{{message}}</p>
+				      {% endfor %}
+				    {% endif %}
+				  {% endwith %}
+				<form action="/info" method="POST">
+					<table>
+						<tr>
+							<td><label>Enter Your Name:</label></td>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr>
+							<td><label>Enter Your Email: </label></td>
+							<td><input type="text" name="email"></td>
+						</tr>
+						<tr>
+							<td><label>What's Your Fav Movie? </label></td>
+							<td><input type="text" name="movie"></td>
+						</tr>
+						<tr>
+							<td><label>Select your fav mealtime!</label></td>
+		             		<td><select id = "meals" name="meals">
+				               		<option value = "1">Breakfast</option>
+				               		<option value = "2">Lunch</option>
+				               		<option value = "3">Dinner</option>
+				               		<option value = "4">All of the above!</option>
+		             			</select></td>
+		             	</tr>
+		             	<tr>
+		             		<td><label>What's Your Fav Dish? </label></td>
+		             		<td><input type="text" name="dish"></td>
+		             	</tr>
+		             	<tr>
+							<td><label>Describe the Perfect Date! </label></td>
+							<td><textarea name="date"></textarea></td>
+						</tr>
+					</table>
+					<input class="sub" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
