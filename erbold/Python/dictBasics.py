@@ -44,19 +44,20 @@
 
 #Actual code:
 
-mydict={"age": 29,"country":"Mongolia","language":"Python"}
+mydict={"nam":"myoho","baby":"diapers","language":"Python"}
 # "My name is":"Erbold"
 
 # "My country of birth is ":The United States
 # "My favorite language is ":Python
+# newdict=[n for n in mydict]
 print mydict
 
 
-def keyvaluepairs(mydict):
-	for somekey, somevalue in mydict.iteritems():
-		print "My", somekey, "is", somevalue
+def newdictname(mydict):
+	for a, b in mydict.iteritems():
+		print "My", a, "is", b
 
-keyvaluepairs(mydict)
+newdictname (mydict)
 
 
 
