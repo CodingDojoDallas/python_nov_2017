@@ -8,15 +8,13 @@ def home():
 
 @app.route('/page2',methods=['POST'])
 def process_form():
+    print request.form['name']
+    print request.form['email']
 
-    Name = request.form['name']
-    Email = request.form['email']
-    print Name
-    print Email
-    return redirect ('/page3')
+    return render_template('page2.html', Name= request.form['name'], Email= request.form['email'])
 
-@app.route('/page3')
-def page3():
-    return render_template('page3.html')
+# @app.route('/page3')
+# def page3():
+#     return render_template('page3.html')
 
 app.run(debug=True)
