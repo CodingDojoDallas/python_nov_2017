@@ -7,17 +7,18 @@
 # Take a number range from 1 to 2000,
 # then Print each number out
 # 	within the printed number identify whether its an odd or even number
-a=range(1,90)
-def odd_even(a):
+
+# a=range(1,90)
+# def odd_even(a):
 
 
-	for x in a:
-		if x%2==0:
-			print "Number is ", x,". This is an even number."
-		else:
-			print "Number is ", x,". This is an odd number."
+# 	for x in a:
+# 		if x%2==0:
+# 			print "Number is ", x,". This is an even number."
+# 		else:
+# 			print "Number is ", x,". This is an odd number."
 
-odd_even(a)
+# odd_even(a)
 
 # input: a=[2,4,10,16]
 
@@ -29,26 +30,26 @@ odd_even(a)
 # 	Then print the new list 
 
 
-# a=[2,4,10,16]
+a=[2,4,10,16]
 
-# def Multiply(a):
+def Multiply(a):
 
-# 	for x in range(len(a)):	
-# 		print a[x]*5
+	for x in range(len(a)):	
+		print a[x]*5
 
-# Multiply(a)
+Multiply(a)
 
-multiples=[2,4,5]
+# multiples=[2,4,5]
 
-def layered_multiples(arr):
-	print arr
-	new_array=[]
-	for x in arr:
-		val_arr=[]
-		for i in range(0,x):
-			val_arr.append(1)
-		new_array.append(val_arr)
-	return new_array
+# def layered_multiples(arr):
+# 	print arr
+# 	new_array=[]
+# 	for x in arr:
+# 		val_arr=[]
+# 		for i in range(0,x):
+# 			val_arr.append(1)
+# 		new_array.append(val_arr)
+# 	return new_array
 
-x = layeredMultiples(multiply([2,4,5],3))
-print x 
+# x = layeredMultiples(multiply([2,4,5],3))
+# print x 
