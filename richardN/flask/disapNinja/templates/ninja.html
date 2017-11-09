@@ -5,6 +5,22 @@
     <title>ninja</title>
   </head>
   <body>
-    <img src="/static/tmnt.png" alt="Turtle Power">
+    {% if showAll == True %}
+    <img src="{{url_for('static', filename= 'tmnt.png')}}" alt="Turtle Power">
+    {% endif%}
+
+    {% if showAll == False %}
+      {% if turtle == 'blue' %}
+        <img src="{{ url_for('static', filename='leonardo.jpg') }}">
+      {% elif turtle == 'orange' %}
+        <img src="{{ url_for('static', filename='michelangelo.jpg') }}">
+      {% elif turtle == 'red' %}
+        <img src="{{ url_for('static', filename='raphael.jpg') }}">
+      {% elif turtle == 'purple' %}
+        <img src="{{ url_for('static', filename='donatello.jpg') }}">
+      {% else %}
+        <img src="{{ url_for('static', filename='notapril.jpg') }}">
+      {% endif %}
+    {% endif %}
   </body>
 </html>
