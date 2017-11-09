@@ -1,0 +1,10 @@
+USE twitter;
+SELECT * FROM faves;
+SELECT * FROM tweets;
+INSERT INTO tweets (tweet, user_id, created_at, updated_at) VALUES ('I cant believe im learning how to use mySQL!', 4, NOW(), NOW());
+SELECT * FROM users;
+INSERT INTO users (first_name, last_name, handle, birthday, created_at, updated_at) VALUES ('Kevin', 'Durant','kdTHEGOAT',  '1988-09-29', NOW(), NOW());
+SELECT * FROM tweets
+JOIN users ON users.id= tweets.user_id;
+
+
