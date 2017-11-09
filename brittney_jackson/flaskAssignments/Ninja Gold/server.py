@@ -26,17 +26,21 @@ def result():
 	elif request.form['building']== 'cave':
 		newGold=random.randrange(5,11)
 		session['goldNum'] += newGold
+		session['activities'] +='\nEarned '+str(newGold)+' gold from the cave!'
 		print 'Earned '+str(newGold)+' gold from the cave!'
 	elif request.form['building']== 'home':
 		newGold=random.randrange(2,6)
 		session['goldNum'] += newGold
+		session['activities'] +='\nEarned '+str(newGold)+' gold from the home!'
 		print 'Earned '+str(newGold)+' gold from home!'
 	elif request.form['building']== 'casino':
 		newGold=random.randrange(-50,51)
 		session['goldNum'] += newGold
 		if newGold>=0:
+			session['activities'] +='\nEarned '+str(newGold)+' gold from the casino!'
 			print 'Earned '+str(newGold)+' gold from the casino!'
 		else:
+			session['activities'] +='\nLost '+str(abs(newGold))+' gold from the casino...DAMN!'
 			print 'Lost '+str(abs(newGold))+' gold from the casino...DAMN!'
 
 	return redirect('/')
