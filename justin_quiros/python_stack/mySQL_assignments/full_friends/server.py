@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, session, flash
 # import the Connector function
 import re
 from mysqlconnection import MySQLConnector
+app.secret_key = 'KeepItSecretKeepItSafe'
 app = Flask(__name__)
 # connect and store the connection in "mysql" note that you pass the database name to the function
 mysql = MySQLConnector(app, 'full_friends')

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Success Page</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+				<div class="success"><h3>The email address you have entered {{email}} is a VALID email address! Thank you!</h3>
+				</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Email Addresses Entered</th>
+			</tr>
+		</thead>
+		<tbody>
+				{% for email_addresses in all_emails: %}
+			<tr>
+				<td>{{ email_addresses['address'] }}</td>
+				<td>{{email_addresses['created_at']}}</td>
+   			</tr>
+				{% endfor %}
+   			<!-- <tr>
+				{% for email_addresses in all_emails: %}
+				<td>{{ email_addresses['address'] }}</td>
+				<td>{{email_addresses['created_at']}}</td>
+				{% endfor %}
+   			</tr> -->
+	</table>
+
+</body>
+</html>
