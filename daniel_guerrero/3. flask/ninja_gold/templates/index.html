@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Index Page
+	</title>
+</head>
+<body>
+	<label>Your Gold:</label>
+	{ display gold amount}
+	<div class="center">
+
+		<form action="/process_money"  method="POST">
+			<h3>FARM</h3>
+			<p>(earns 10-20 golds)</p>
+			<button type="submit" name="farm" >Find Gold!</button>
+		</form>
+		
+		<form action="/process_money"  method="POST">
+			<h3>CAVE</h3>
+			<p>(earns 5-10 golds)</p>
+			<button type="submit" name="cave">Find Gold!</button>
+		</form>
+		
+		<form action="/process_money"  method="POST">
+			<h3>HOUSE</h3>
+			<p>(earns 2-5 golds)</p>
+			<button type="submit" name="house">Find Gold!</button>
+		</form>
+
+		<form action="/process_money" method="POST">
+			<h3>CASINO</h3>
+			<p>(earns/takes 0-50 golds)</p>
+			<button type="submit" name="casino" >Find Gold!</button>
+		</form>
+		
+	</div>
+	<label>Activities: </label>
+	<textarea>
+		
+	</textarea>
+</body>
+</html>
