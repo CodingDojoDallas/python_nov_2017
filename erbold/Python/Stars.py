@@ -63,5 +63,5 @@ def stars(bank):
 			letter=x[0].lower()
 			print letter * length
 
-x=[4,"Tom", 1, "Michael", 5,7,"Jimmy Smith"]
-stars(x)	
+bank=[4,"Tom", 1, "Michael", 5,7,"Jimmy Smith"]
+stars(bank)	

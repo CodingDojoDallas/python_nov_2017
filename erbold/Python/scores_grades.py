@@ -49,7 +49,8 @@ import random
 
 def grades(students):
 	print "Scores and Grades"
-	for num in range(0, students):
+	num=0
+	while num <= students:
 		score=random.randint(60,100)
 		if score >=60 and score <= 69:
 			print "Score: ", score, "; Your grade is D"
@@ -59,6 +60,7 @@ def grades(students):
 			print "Score: ", score, "; Your grade is B"
 		elif score >=90 and score <=100:
 			print "Score: ", score, "; Your grade is A"
+		num+=1
 	print "End of the program. Bye!"
 
 grades(10)

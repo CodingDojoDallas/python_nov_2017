@@ -35,3 +35,13 @@ def classroom():
 			print num, firstname, lastname, length
 classroom()			
 	
+
+
+
+def making_tupes():
+    the_list = []
+    # here, k and v will parse each tuple of key,value pairs returned by .iteritems()
+    for k, v in the_dict.iteritems():
+        the_list.append((k,v))
+    print the_list
+making_tupes()
