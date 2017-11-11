@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Wall</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style_wall.css')}}">
+</head>
+<body class="main">
+	<div class="header">
+		<h3>CodingDojo Wall</h3>
+		<p>Welcome {{session['first_name']}}</p>
+		<form action="/log_off" method="post">
+			<button name="log_off" method="post">Log off</button>
+		</form>
+	</div>
+		<div class="forum">
+		<div class="post_message">
+			<h4>Post a message</h4>
+			<form action="/post_mess" method="post">
+				<textarea class="message" name="message"></textarea>
+				<input class="post" type="submit" name="post_mess">
+			</form>
+		</div>
+		{% set previous = all_messages[0]['post_id'] %}
+		{% for i in range (0, all_messages|length): %}
+		<div class="post_comments">
+			{% if (i==0) or (all_messages[i]['post_id'] != all_messages[i-1]['post_id']) %}
+		   <p><strong> {{all_messages[i]['post_name']}} - {{all_messages[i]['post_date']}}</strong></p>
+		   <p>{{all_messages[i]['message']}}</p>
+		   {% endif %}
+
+		   {% if all_messages[i]['comment_id'] != None %}
+		   <p><strong>{{all_messages[i]['comment_name']}} - {{all_messages[i]['comment_date']}}</strong></p>
+		   <p>{{all_messages[i]['comment']}}</p>
+		   {% endif %}	  
+
+		   {% if ((i+1)>=all_messages|length)   or all_messages[i]['post_id'] != all_messages[i+1]['post_id'] %}
+		   	<form action="/comment" method="post">
+				<textarea class="comment" name="comment"></textarea>
+				<input type="hidden" name="post_id" value="{{all_messages[i]['post_id']}}"></input>
+				<input class="post" type="submit" name="comment">
+			</form>
+			{% endif %}
+			{% set previous = all_messages[i]['post_id'] %}
+		</div>
+			{% endfor %}
+	</div>
+
+
+</body>
+</html>

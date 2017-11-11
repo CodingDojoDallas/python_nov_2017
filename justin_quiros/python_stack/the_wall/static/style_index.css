@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.login{
+	height: 230px;
+	width: 130px;
+	border: solid 2px red;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: silver;
+}
+
+.register{
+	height: 230px;
+	width: 130px;
+	border: solid 2px red;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 10px;
+	display: inline-block;
+	background-color: silver;
+}
+
+.but{
+	margin-top: 5px;
+}
+
+p{
+	margin-bottom: 5px;
+}

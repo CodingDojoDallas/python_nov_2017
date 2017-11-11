@@ -1,0 +1,89 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.main{
+	width: 970px;
+	background-color: #963C46;
+}
+
+.header{
+	width: 970px;
+	padding: 5px;
+	border-bottom: solid 2px;
+	height: 30px;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+	.header h3{
+		display: inline;
+		color: white;
+	}
+
+	.header p{
+		display: inline;
+		margin-left: 500px;
+		color: white;
+	}
+	.header form{
+		display: inline;
+		margin-left: 350px;
+	}
+	.header button{
+		vertical-align: top;
+		margin-top: -17px;
+		display: inline;
+		width: 50px;
+	}
+.forum{
+	border: solid 2px black;
+	width: 900px;
+	margin-left: 40px;
+	background-color: #F4F3EF;
+}
+.post_message{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+	.post_message h4{
+		margin-bottom: 10px;
+	}
+
+	.post_mess{
+		width: 800px;
+	}
+
+	.message{
+		width: 650px;
+		height: 60px;
+	}
+
+	button{
+		width: 100px;
+		height: 20px;
+		display: block;
+		margin-left: 550px;
+	}
+
+.post_comments{
+	margin-left: 125px;
+	width: 600px;
+	border-top: solid 1px black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	/*background-color: silver;*/
+
+}
+.comment{
+	width: 500px;
+	height: 50px;
+}
+.post{
+	vertical-align: bottom;
+}
+.info{
+	font-style: bold;
+}
