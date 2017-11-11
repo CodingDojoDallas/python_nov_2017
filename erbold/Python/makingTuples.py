@@ -10,7 +10,7 @@ the_dict = {
 
 def makingtupes(yup):
 	newlist=[]
-	for x,y in yup.iteritems():
-		newlist.append((x,y))
+	for v_list in yup:
+		newlist.append((v_list, yup[v_list]))
 	print newlist
 makingtupes(the_dict)
