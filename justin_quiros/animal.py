@@ -40,7 +40,7 @@ class Dragon(Animal):
 
 	def fly(self):
 		self.health -= 10
-		print self.health, "I am a Dragon"
+		# print self.health, "I am a Dragon"
 		return self
 
 dragon1 = Dragon("Drogon")
