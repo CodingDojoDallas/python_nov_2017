@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Ninja GOLD!</h1>
+    <h2>Your Bank</h2> <p id='bank'>{{session['bank']}}</p>
+    </div>
+    <div class="building">
+      <h3>farm</h3>
+      <form action="/processGold" method="POST">
+        <input type="hidden" name="building" value="farm" />
+        <input type="submit" value="Find Gold!"/>
+      </form>
+    </div>
+    <div class="building">
+      <h3>cave</h3>
+      <form action="/processGold" method="POST">
+        <input type="hidden" name="building" value="cave" />
+        <input type="submit" value="Find Gold!"/>
+      </form>
+    </div>
+    <div class="building">
+      <h3>house</h3>
+      <form action="/processGold" method="POST">
+        <input type="hidden" name="building" value="House" />
+        <input type="submit" value="Find Gold!"/>
+      </form>
+    </div>
+    <div class="building">
+      <h3>casino</h3>
+      <form action="/processGold" method="POST">
+        <input type="hidden" name="building" value="casino" />
+        <input type="submit" value="Find Gold!"/>
+      </form>
+    </div>
+
+</html>

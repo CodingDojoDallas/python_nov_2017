@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>greatNumberGame</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <h1>Welcom to the Great Number Game! Sucka!</h1>
+    <h4>I am thinking of a number between 0 and 100</h4>
+    <h4>Take a guess....</h4>
+    <form action='/guess' method='post'>
+      <input type="text" name="guess"/><br/>
+      <input type="submit" name="submit">
+    </form>
+    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+    {% if errors %}
+    <div class="alert-message block-message error">
+      {%- for msg in errors %}
+      <p>{{ msg }}</p>
+      {% endfor -%}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    {% with successes = get_flashed_messages(category_filter=["success"]) %}
+    {% if successes %}
+    <div class="alert-message block-message success">
+      {%- for msg in successes %}
+      <p>{{ msg }}</p>
+      {% endfor -%}
+      <form action='/reset' method='post'>
+        <input type='submit' name='reset' value='Reset'>
+      </form>
+    </div>
+    {% endif %}
+    {% endwith %}
+
+  </body>
+</html>
