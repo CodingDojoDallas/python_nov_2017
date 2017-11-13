@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Email Validation</title>
+  </head>
+  <body>
+ 
+ <!-- insert validation statement here  -->
+ <!-- html box with green background -->
+   
+    <h2>Email addresses in Database:</h2>
+    <table>
+      <tr>
+        <th>Email Address</th>
+        <th>Logged</th>
+      </tr>
+    {% for emails in all_emails: %}
+      <tr> 
+        <td>{{ emails['email'] }}</td>
+        <td>{{ emails['created_at'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </body>
+</html>
