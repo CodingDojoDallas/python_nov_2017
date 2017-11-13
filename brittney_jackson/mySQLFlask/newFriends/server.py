@@ -37,7 +37,6 @@ def update(friend_id):
     query = "UPDATE friends SET first_name = :first_name, last_name = :last_name, age = :age WHERE id = :id"
     data = {
              'name': request.form['name'], # changes go here
-
              'last_name':  request.form['last_name'],
              'age': request.form['age'],
              'id': friend_id
