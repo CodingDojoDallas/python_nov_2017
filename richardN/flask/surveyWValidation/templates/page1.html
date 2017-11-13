@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>page1 With Validation</title>
+  </head>
+  <body>
+    <h1>home</h1>
+    <div class="">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <p>{{message}}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
+    <div class="blah">
+      <form action='/page2' method='post'>
+            Name: <input type='text' name='name'>
+            Location: <input type='text' name='location'>
+            FavLang:<input type='text' name='FavLang'>
+            Comment: <input type='text' name='Comment'>
+            <input type='submit' value='submit'>
+    </div>
+
+    <a href="/page2">Continue</a>
+  </body>
+</html>
