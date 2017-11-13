@@ -1,0 +1,22 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	width: 970px;
+}
+
+.current{
+	border: solid 2px red;
+	width: 400px;
+	height: 100px;
+	margin-left: 200px;
+	padding-left: 200px;
+}
+
+.time{
+	margin-top: 10px;
+	border: solid 2px red;
+	width: 475px;
+	height: 100px;
+	margin-left: 200px;
+	padding-left: 125px;
+}
