@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Dojo Survey</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'survey_app/css/style.css' %}">
+</head>
+<body>
+<body>
+	<div class="info">
+		Thanks for submitting this form! You have submitted this form {{request.session.attempts}} times now.
+		<h4>Submitted Information</h4>
+		<p>Name: {{request.session.name}}</p>
+		<p>Location: {{request.session.location}}</p>
+		<p>Language: {{request.session.language}}</p>
+		<p>Comments: {{request.session.comments}}</p>		
+	</div>
+</body>
+</html>

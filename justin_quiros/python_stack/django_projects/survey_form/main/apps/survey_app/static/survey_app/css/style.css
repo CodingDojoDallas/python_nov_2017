@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.main{
+	margin: 20px;
+	width: 242px;
+	height: 122px;
+	border: solid 2px silver;
+	background-color: grey;
+	padding: 10px;
+}
+
+select{
+	float: right;
+}
+
+input{
+	float: right;
+}
+
+button{
+	float: right;
+}
+
+textarea{
+	width: 240px;
+}
