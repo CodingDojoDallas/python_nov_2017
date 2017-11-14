@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Amadon</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'amadon_app/css/style.css' %}">
+</head>
+<body>
+<body>
+	<div class="main">
+		<h1>Amadon Store!</h1>
+		<div class="market">
+				<table>
+					<thead>
+						<tr>
+							<th class="col1">Item</th>
+							<th class="col2">Price</th>
+							<th class="col3">Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for i in request.session.store %}
+					<form action="/process" method="post">
+					{% csrf_token %}
+						<tr>
+							<td>{{i.item}}</td>
+							<td>${{i.price}}</td>
+							<td>
+								<select name="quantity">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+								<input type="hidden" name="product_id" value="{{i.id}}"/>
+								<input type="submit" value="Buy!">
+							</td>
+						</tr>
+					</form>
+						{% endfor %}											
+					</tbody>
+				</table>
+		</div>
+	</div>
+</body>
+</html>

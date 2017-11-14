@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.market{
+	width: 313px;
+	border: solid 2px black;
+	margin-top: 30px;
+	padding: 10px;
+}
+
+.col1{
+	width: 125px;
+	text-align: left;
+}
+
+.col2{
+	width: 80px;
+	text-align: left;
+}
+
+.col3{
+	width: 100px;
+	text-align: left;
+}
