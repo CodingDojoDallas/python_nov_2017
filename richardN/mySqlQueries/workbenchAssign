@@ -1,0 +1,5 @@
+USE twitter
+SELECT * FROM twitter
+INSERT INTO twitter (name, created_at, updated_at) VALUES ('
+DELETE FROM twitter WHERE id = 2;
+UPDATE twitter SET user = 'Rix' WHERE id = 2;
