@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>page1 With Validation</title>
+  </head>
+  <body>
+    <h1>home</h1>
+    <div class="">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <ul class=flashes>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+
+    </div>
+    <div class="blah">
+      <form action='/page2' method='post'>
+            email: <input type='text' name='email'>
+            firstName: <input type='text' name='firstName'>
+            lastName:<input type='text' name='lastName'>
+            password: <input type='text' name='password'>
+            confirmPassword:<input type='text' name='confirmPassword'>
+            <input type='submit' value='submit'>
+    </div>
+
+  </body>
+</html>
