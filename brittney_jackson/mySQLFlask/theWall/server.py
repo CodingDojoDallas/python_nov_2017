@@ -64,18 +64,17 @@ def register():
 def login():
     email = request.form['email']
     password = md5.new(request.form['password']).hexdigest()
-    query = "SELECT * FROM users WHERE users.email = :email AND users.password = :password"
-    data = { 'email': email, 'password': password }
+    query = "SELECT * FROM users where users.email = :email AND users.password = :password"
+    data = { 'email': email, 'password': password}
     user = mysql.query_db(query, data)
-    print user
-
-    if user != []:
+ 
+    if request.form['email'] == data['email'] and password == data['password']:
         print 'hello'
         return redirect('/success')
     else:
-        flash('Oh No Big Fella. What is you doin?')
-        return redirect ('/')
-    
+        flash('wrong password!')
+        print 'oops'
+        return redirect('/')
 
 @app.route('/success')
 def home():
