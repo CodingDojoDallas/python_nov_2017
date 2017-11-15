@@ -11,10 +11,10 @@ for myo in nam:
 
 #Sum list
 a=[1,2,5,10,255,3]
-Sum=0
+bam=0
 for x in a:
-	Sum=Sum+x
-print Sum
+	bam=bam+x
+print bam
 
 #Average List
 a=[1,2,5,10,255,3]
