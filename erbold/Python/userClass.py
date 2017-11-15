@@ -76,11 +76,33 @@
 #Without self, every time we changed one object's attributes, we'd change the attribute for
 #all the items of that type. 
 
+# class User(object):
+#   name = "Anna"
+# anna = User()
+# print "anna's name: ", anna.name
+# User.name = "Bob"
+# print "anna's name after change:", anna.name
+# bob = User()
+# print "bob's name:", bob.name
+
+#I still don't understand what i just did.
+#Python's _init_ method is known as a magic method. Magic methods are automatically
+#created and sometimes invoked when a new instance of a class is created. 
+#_init_ is useful because it allows us to set some attributes when a new instance is created.
+#Because we know that the init method will run immediately, we can pass in some parameters
+#to that init method upon object creation.
+
 class User(object):
-  name = "Anna"
-anna = User()
-print "anna's name: ", anna.name
-User.name = "Bob"
-print "anna's name after change:", anna.name
-bob = User()
-print "bob's name:", bob.name
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+        self.logged = False
+user1 = User("Anna Propas", "anna@anna.com")
+print user1.name
+print user1.logged
+print user1.email
+
+#Above we are able to create objects that share characteristics but are still individual. When
+#the object is created we can specify what values we'd like to assign to each attribute. 
+#In the _init_ method we are assigning the values we passed in as values of the attributes
+#of each individual object.
