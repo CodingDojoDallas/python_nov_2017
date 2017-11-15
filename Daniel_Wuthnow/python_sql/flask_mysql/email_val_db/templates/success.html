@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email val with DB</title>
+</head>
+<body>
+	{% with messages = get_flashed_messages(category_filter=["success"]) %}
+		{% if messages %}
+			{% for message in messages %}
+					{{message}}
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<h2>
+		Email Addresses Entered:
+	</h2>
+	{% for email in email: %}
+	<div>
+				<p>{{ email['email']}}</p>
+				<p>{{ email['created_at']}}</p>
+	</div>
+	{% endfor %}
+</body>
+</html>

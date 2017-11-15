@@ -1,0 +1,52 @@
+1)
+SELECT * FROM world.languages
+
+WHERE language = 'Slovene'
+
+order by percentage desc
+
+2)
+SELECT countries.name, count(*) as cities from cities
+
+join countries on countries.id = cities.country_id
+
+group by countries.name
+order by cities desc
+
+3)
+SELECT * FROM world.cities
+
+where country_code = 'mex' and population > 500000
+
+order by population desc
+
+4)
+SELECT * FROM world.languages
+
+where percentage > 89
+
+order by percentage desc
+
+5)
+SELECT * FROM world.countries
+
+where surface_area < 501 and population > 100000
+
+6)
+SELECT * FROM world.countries
+
+where government_form = 'constitutional Monarchy' and capital > 200 and life_expectancy >75
+
+7)
+SELECT name, country_code as country, district, population FROM cities
+
+where country_id = 9 and population > 500000
+
+8)
+SELECT region, count(*) as countries
+
+FROM countries
+
+group by region
+
+order by countries desc

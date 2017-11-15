@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+</head>
+<body>
+	<h1>Counter</h1>
+	<h3>{{session['counter']}}</h3>
+	<form action="/clear" method="post">
+		<button name='reset' method='post'>reset</button>
+	</form>
+	<form action="/addtwo" method="post">
+		<button name='addtwo' method='post'>Plus 2</button>
+	</form>
+</body>
+</html>

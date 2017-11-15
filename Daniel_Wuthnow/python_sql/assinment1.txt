@@ -1,0 +1,11 @@
+select
+select all(*)
+where
+order assinding(or decending)
+insert
+delete
+update
+concat
+concat_ws
+lower
+length

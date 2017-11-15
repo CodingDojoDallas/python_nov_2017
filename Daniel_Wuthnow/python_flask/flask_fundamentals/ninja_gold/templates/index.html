@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja Gold</title>
+</head>
+<body>
+	<div id="ningold">
+		Your Gold: {{session['gold']}}
+	</div>
+	<div>
+		<form action="/process_money" method="post">
+			<h4>Farm</h4>
+			<p>(earns 10-20 golds)</p>
+			<input type="hidden" name="building" value="farm" />
+			<input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+	<div>
+		<form action="/process_money" method="post">
+			<h4>Cave</h4>
+			<p>(earns 5-10 golds)</p>
+			<input type="hidden" name="building" value="cave" />
+			<input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+	<div>
+		<form action="/process_money" method="post">
+			<h4>House</h4>
+			<p>(earns 2-5 golds)</p>
+			<input type="hidden" name="building" value="house" />
+			<input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+	<div>
+		<form action="/process_money" method="post">
+			<h4>Casino</h4>
+			<p>(earns/takes 0-50 golds)</p>
+			<input type="hidden" name="building" value="casino" />
+			<input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+	<form action="/clear" method="post">
+		<button>Play again</button>
+	</form>
+	Activities:
+	{% for event in session['history'] %}
+		{% if even[0] > 0 %}
+			
+</body>
+</html>

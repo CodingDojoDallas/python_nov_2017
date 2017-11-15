@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game</title>
+</head>
+<body>
+	<h2>Welcome to the Great Guessing Game</h2>
+	<p>I am thinking of a number  between 1 and 100</p>
+	<p>Take a guess!!</p>
+	{{result}}
+	<form action="/guess" method="post">
+		<input type="text" name="guess">
+		<button name="submit" method='post'>Submit</button>
+	</form>
+	your last guess {{session['guess']}}
+	<form action="/again" method="post">
+		<button>Play again</button>
+	</form>
+</body>
+</html>

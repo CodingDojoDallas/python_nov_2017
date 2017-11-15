@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email val with DB</title>
+</head>
+<body>
+	{% with messages = get_flashed_messages(category_filter=["fail"]) %}
+		{% if messages %}
+			{% for message in messages %}
+					{{message}}
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<form action="/submit" method="POST">
+		Email: <input type="text" name="email">
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Reg</title>
+</head>
+<body>
+	<form action="/process" method="post">
+		<input type="hidden" name="action" value="reg">
+		First Name: <input type="text" name="f_name">
+		{% with messages = get_flashed_messages(category_filter=["f_name"]) %}
+			{% if messages %}
+				{% for message in messages %}
+					{{message}}
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+		Last Name: <input type="text" name="l_name">
+		{% with messages = get_flashed_messages(category_filter=["l_name"]) %}
+			{% if messages %}
+				{% for message in messages %}
+					{{message}}
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+		Email: <input type="text" name="email">
+		{% with messages = get_flashed_messages(category_filter=["email"]) %}
+			{% if messages %}
+				{% for message in messages %}
+					{{message}}
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+		Password: <input type="password" name="password">
+		{% with messages = get_flashed_messages(category_filter=["password"]) %}
+			{% if messages %}
+				{% for message in messages %}
+					{{message}}
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+		Password Confirmation: <input type="password" name="password_comp">
+		{% with messages = get_flashed_messages(category_filter=["password_comp"]) %}
+			{% if messages %}
+				{% for message in messages %}
+					{{message}}
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+		<input type="submit" name="submit">
+	</form>
+	<form method="post" action="/process">
+		<input type="hidden" name="action" value="login">
+		Email: <input type="text" name="email">
+		Password: <input type="password" name="password">
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<form action="/submit" method="post">
+		<div>
+			Email: <input type="text" name="email">
+				{% with messages = get_flashed_messages(category_filter=["email"]) %}
+					{% if messages %}
+						{% for message in messages %}
+							{{message}}
+						{% endfor %}
+					{% endif %}
+				{% endwith %}
+		</div>
+		<div>
+			First Name: <input type="text" name="first_name">
+				{% with messages = get_flashed_messages(category_filter=["first"]) %}
+					{% if messages %}
+						{% for message in messages %}
+							{{message}}
+						{% endfor %}
+					{% endif %}
+				{% endwith %}
+		</div>
+		<div>
+			Last Name: <input type="text" name="last_name">
+				{% with messages = get_flashed_messages(category_filter=["last"]) %}
+					{% if messages %}
+						{% for message in messages %}
+							{{message}}
+						{% endfor %}
+					{% endif %}
+				{% endwith %}
+		</div>
+		<div>
+			Password: <input type="password" name="password">
+				{% with messages = get_flashed_messages(category_filter=["password"]) %}
+					{% if messages %}
+						{% for message in messages %}
+							{{message}}
+						{% endfor %}
+					{% endif %}
+				{% endwith %}
+		</div>
+		<div>
+			Comfirm Password: <input type="password" name="password_comp">
+				{% with messages = get_flashed_messages(category_filter=["password_comp"]) %}
+					{% if messages %}
+						{% for message in messages %}
+							{{message}}
+						{% endfor %}
+					{% endif %}
+				{% endwith %}
+		</div>
+		<button>Confirm</button>
+	</form>
+</body>
+</html>
