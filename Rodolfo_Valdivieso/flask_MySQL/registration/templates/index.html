@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login and Registration</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Login and Registration</h1>
+
+		{% with messages = get_flashed_messages() %}
+			    {% if messages %}
+			      {% for message in messages %}
+			        <p class="errores">{{message}}</p>
+			      {% endfor %}
+			    {% endif %}
+		{% endwith %}
+
+
+		{% if login == '0' %}
+			<form action="/process" method="post">
+
+
+				<table>
+					<tr>
+						<td><label for="">First Name:</label></td>
+						<td><input type="text"  id="first_name" name="first_name" value="{{first_name}}"></td>
+					</tr>
+					<tr>
+						<td><label for="">Last Name:</label></td>
+						<td><input type="text"  id="last_name" name="last_name" value="{{last_name}}"></td>
+					</tr>
+					<tr>
+						<td><label for="">Email:</label></td>
+						<td><input type="text"  id="email" name="email" value="{{email}}"></td>
+					</tr>
+					<tr>
+						<td><label for="">Password:</label></td>
+						<td><input type="password"  id="password" name="password" value="{{password}}"></td>
+					</tr>
+					<tr>
+						<td><label for="">Confirm Password:</label></td>
+						<td><input type="password"  id="password2" name="password2" value="{{password2}}"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><button> Submit</button></td>
+					</tr>
+				</table>
+			</form>
+			
+				<table>
+					<tr>
+						<td><form action="/reset" method="get"><button> Reset</button></form></td>
+						<td><form action="/goback" method="get"><button> Go Back</button></form></td>
+					</tr>
+				</table>
+			
+
+		{% endif %}
+		
+		{% if login == '1' %}
+			<form action="/logincheck" method="post">
+				<table>
+					<tr>
+						<td><label for="">Email:</label></td>
+						<td><input type="text"  id="email" name="email" value="{{email}}"></td>
+					</tr>
+					<tr>
+						<td><label for="">Password:</label></td>
+						<td><input type="password"  id="password" name="password" value="{{password}}"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><button> Submit</button></td>
+					</tr>
+				</table>
+			</form>
+			<form  action="/goback" method="get">
+				<table>
+					<tr>
+						<td><button> Go Back</button></td>
+					</tr>
+				</table>
+				
+			</form>
+		{% endif %}
+
+		{% if login != '1' and login != '0' %}
+			<form action="/login" method="get"><button> Log in</button></form>
+			<form action="/register" method="get"><button> New Account</button></form>
+		{% endif %}
+
+	</div>
+</body>
+</html>

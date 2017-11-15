@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ninja Gold - Django Version</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Ninja Gold Game - (Django)!!!</h1>
+		<table>
+			<thead>
+				<tr>
+					<td colspan="2"><h2>Your Gold: {{request.session.gold}}</h2></td>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<form action="/farm" method="post">
+							{% csrf_token %}
+							<h3>Farm</h3>
+							<h3>(earn 10-20 golds)</h3>
+							<input type="submit" value="Find Gold!"/>
+						</form>
+					</td>
+					<td>
+						<form action="/cave" method="post">
+							{% csrf_token %}
+							<h3>Cave</h3>
+							<h3>(earn 5-10 golds)</h3>
+							<input type="submit" value="Find Gold!"/>
+						</form>
+					</td>
+					<td>
+						<form action="/house" method="post">
+							{% csrf_token %}
+							<h3>House</h3>
+							<h3>(earn 2-5 golds)</h3>
+							<input type="submit" value="Find Gold!"/>
+						</form>
+					</td>
+					<td>
+						<form action="/casino" method="post">
+							{% csrf_token %}
+							<h3>Casino</h3>
+							<h3>(earn 0-50 golds)</h3>
+							<input type="submit" value="Find Gold!"/>
+						</form>
+						
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container" id="secondDiv">
+		
+		<h2>Activities:</h2>
+
+		{% for i in request.session.activities %}
+			<h3 class="{{i.class}}">{{i.record}}</h3>
+		{% endfor %}
+	</div>
+		<form action="/reset" id="reset" method="post">
+			{% csrf_token %}
+			<input type="submit" value="Reset">
+		</form>
+</body>
+</html>

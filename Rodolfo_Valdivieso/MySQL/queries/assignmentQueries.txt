@@ -1,0 +1,50 @@
+UPDATE users set first_name = 'Kobe1'  where id = 1
+
+INSERT INTO users (first_name, last_name) values ('Rodolfo', 'Valdi')
+
+DELETE FROM users where id=6
+
+SELECT * 
+FROM twitter.users
+
+SELECT * 
+FROM twitter.users where id = 1
+
+SELECT * 
+FROM twitter.users order by birthday
+
+SELECT * 
+FROM twitter.users where id between 1 and 5 order by birthday
+
+SELECT * 
+FROM twitter.users
+ JOIN tweets
+ ON users.id = tweets.user_id
+
+SELECT * 
+FROM twitter.users
+ LEFT JOIN tweets 
+ON users.id = tweets.user_id
+
+SELECT * 
+FROM twitter.users
+ RIGHT JOIN tweets 
+ON users.id = tweets.user_id
+
+SELECT * 
+FROM twitter.users
+ JOIN tweets
+ ON users.id = tweets.user_id  WHERE tweets.user_id = 1
+
+SELECT * 
+FROM twitter.users
+ LEFT JOIN tweets 
+ON users.id = tweets.user_id  WHERE tweets.user_id is null
+
+SELECT * 
+FROM twitter.users
+ RIGHT JOIN tweets 
+ON users.id = tweets.user_id  WHERE tweets.user_id is null
+
+
+

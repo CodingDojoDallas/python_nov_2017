@@ -1,0 +1,124 @@
+
+body{
+	background-color: #005A31;
+	font-family: arial;
+}
+
+form{
+	display:inline-block;
+	border: 3px solid #CBE32D;
+	margin: 10px 5px 10px 10px;
+	width: 180px;
+}
+
+.title{
+	color:purple;
+	font-size: 40px;
+	display: block;
+	text-align: center;
+	
+}
+
+
+p{
+	color:white;
+	display: inline-block;
+	margin: 0 0 0 0;
+}
+
+
+h1{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	color: #A8CD1B;
+}
+
+h2{
+	margin-left: 50px;
+	display: inline-block;
+	color: white;
+}
+
+h3{
+	margin-left: 10px;
+	text-align: center;
+	color: white;
+}
+
+#gold{
+	margin-right: 40%;
+	width: 200px;
+}
+
+input{
+	border:2px solid black;
+	border-radius: 5px;
+	margin: 0 10px 10px 40px;
+	width: 100px;
+	background-color: #F3FAB6;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+}
+.messageWon{
+	background-color: green;
+	font-size: 20px;
+	display: block;
+	border: 2px solid black;
+	width: 300px;
+	height:200px;
+	margin:0 0 0 30%;
+	margin-bottom: 20px;
+}
+.message{
+	background-color: red;
+	font-size: 20px;
+	display: block;
+	border: 2px solid black;
+	width: 300px;
+	height:200px;
+	margin:0 0 0 30%;
+	margin-bottom: 20px;
+}
+
+
+button{
+	background-color: black;
+	color:white;
+	border:2px solid black;
+	border-radius: 20px;
+	display: block;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	
+}
+
+#reset{
+	text-align: center;
+	margin:10px 100px 10px 50px;
+	width: 500px;
+}
+
+.container{
+	border:2px solid #CBE32D;
+	margin:10px 100px 10px 50px;
+}
+
+#secondDiv{
+	height:200px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+.green{
+	color: green;
+
+}
+
+.red{
+	color: red;
+
+}

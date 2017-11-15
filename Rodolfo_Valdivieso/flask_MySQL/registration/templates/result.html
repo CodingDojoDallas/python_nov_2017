@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login and Registration</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container2">
+		<h1 class="title">Login and Registration!!!</h1>
+		{% if success == "1" %}
+			<h1>Thanks for submitting your information!!!</h1>
+		{% endif %}
+		<h2>User ID stored in Session: {{user_id}}</h2>
+		<form  action="/goback" method="get">
+			<button> Go Back</button>
+		</form>
+	</div>
+</body>
+</html>
+

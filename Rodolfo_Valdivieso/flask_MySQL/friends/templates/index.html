@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friends</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Friends</h1>
+
+		<div class="container" id="secondDiv">
+
+			<table>
+				<tr>
+					<td><h3><span class="tabletitle">Name</span></h3></td>
+					<td><h3><span class="tabletitle">Age</span></h3></td>
+					<td><h3><span class="tabletitle">Friends Since</span></h3></td>
+				</tr>
+				{% for i in range(0,friends|length) %}
+				<tr>
+					<td><h3><span class="tablevalue">{{friends[i]['friend_name']}}</span></h3></td>
+					<td><h3><span class="tablevalue">{{friends[i]['friend_age']}} </span></h3></td>
+					<td><h3><span class="tablevalue">{{friends[i]['friends_since']}}</span></h3></td>
+
+				</tr>
+				{% endfor %}
+
+			</table>
+			
+				
+			
+
+		</div>
+		<form action="/process" method="post">
+			<h1 class="title">Add a Friend</h1>
+			<label for="">Name:</label>
+			<input type="text"  id="name" name="name" value="">
+			<label for="">Age:</label>
+			<input type="text"  id="age" name="age" value="">
+
+			<button>Submit</button>
+		</form>
+		
+	</div>
+</body>
+</html>
+

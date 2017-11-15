@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amadon - Checkout</title>
+	<!-- Boostrap Core -->
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Thank you for your business!</h1>
+		<h2>We charged your Credit Card for {{request.session.amount_charged}}</h2>
+		<h3>You have ordered {{request.session.items}} so far and spent {{request.session.amount_spent}}</h3>
+		<form action="/goback" method="get">
+			<input type="submit" value="Go back">
+		</form>
+		<form action="/clearsession" method="post">
+			{% csrf_token %}
+			<input type="submit" value="Clear Session">
+		</form>
+	</div>
+
+<!-- scripts -->
+	<script src="../static/js/jquery-3.1.1.js"></script>
+	<script src="../static/js/jquery.easing.1.3.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="../static/js/myscrollto.js"></script>	
+</body>
+</html>

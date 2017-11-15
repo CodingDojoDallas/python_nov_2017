@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dojo Survey Django</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Dojo Survey Index - Django</h1>
+
+
+		<form action="/create" method="post">
+			{% csrf_token %}
+			{% if messages %}
+			    {% for message in messages %}
+			      <p class="errores">{{ message }}</p>
+			    {% endfor %}
+			{% endif %}
+			<label for="">Your Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :</label>
+			<input type="text"  id="firstName" name="firstName" value="{{request.session.name}}">
+			<label for="">Dojo Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+			<select name="location" id="location">
+				<option value="">Select an Option   {{request.session.location}}</option>
+				<option value="Dallas">Dallas</option>
+				<option value="Miami">Miami</option>
+				<option value="New York">New York</option>
+				<option value="San Francisco">San Francisco</option>
+			</select>
+
+			<label for="">Favorite Language:</label>
+			<select name="language" id="language">
+				<option value="">Select an Option</option>
+				<option value="Python">Python</option>
+				<option value="Ruby">Ruby</option>
+				<option value="Java">Java</option>
+				<option value="C++">C++</option>
+			</select>
+
+			<label for="" >Comment(optional):</label>
+			<textarea rows="4" cols="50" id="comment" name="comment">{{request.session.comment}}</textarea>
+
+			<button>Submit</button>
+		</form>
+		
+	</div>
+</body>
+</html>
+

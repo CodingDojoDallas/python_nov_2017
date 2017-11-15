@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dojo Survey</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Dojo Survey Index</h1>
+
+
+		<form action="/process" method="post">
+
+			{% with messages = get_flashed_messages() %}
+			    {% if messages %}
+			      {% for message in messages %}
+			        <p class="errores">{{message}}</p>
+			      {% endfor %}
+			    {% endif %}
+			{% endwith %}
+			<label for="">Your Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :</label>
+			<input type="text"  id="firstName" name="firstName" value="{{name}}">
+			<label for="">Dojo Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+			<select name="location" id="location">
+				<option value="">Select an Option   {{location}}</option>
+				<option value="Dallas" {% if location=="Dallas"%}selected="selected"{%endif%}>Dallas</option>
+				<option value="Miami" {% if location=="Miami"%}selected="selected"{%endif%}>Miami</option>
+				<option value="New York" {% if location=="New York"%}selected="selected"{%endif%}>New York</option>
+				<option value="San Francisco" {% if location=="San Francisco"%}selected="selected"{%endif%}>San Francisco</option>
+			</select>
+
+			<label for="">Favorite Language:</label>
+			<select name="language" id="language">
+				<option value="">Select an Option</option>
+				<option value="Python" {% if language=="Python"%}selected="selected"{%endif%}>Python</option>
+				<option value="Ruby" {% if language=="Ruby"%}selected="selected"{%endif%}>Ruby</option>
+				<option value="Java" {% if language=="Java"%}selected="selected"{%endif%}>Java</option>
+				<option value="C++" {% if language=="C++"%}selected="selected"{%endif%}>C++</option>
+			</select>
+
+			<label for="" >Comment(optional):</label>
+			<textarea rows="4" cols="50" id="comment" name="comment">{{comment}}</textarea>
+
+			<button> Submit</button>
+		</form>
+		
+	</div>
+</body>
+</html>
+

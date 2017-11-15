@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dojo Survey Index</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+			<p class="errores2">Thanks for submitting this form!. You have submitted {{request.session.attempts}} times now.</p>
+		<form action="/goback" method="get">
+			<h1 class="title">Dojo Survey Index</h1>
+			<table>
+				<tr>
+					<td><h2>Name:              </h2></td>
+					<td><p>{{request.session.name}}</p></td>
+				</tr>
+				<tr>
+					<td><h2>Dojo Location:     </h2></td>
+					<td><p>{{request.session.location}}</p></td>
+				</tr>
+				<tr>
+					<td><h2>Favorite Language: </h2></td>
+					<td><p>{{request.session.language}}</p></td>
+				</tr>
+				<tr>
+					<td><h2>Comment:           </h2></td>
+					<td><p>{{request.session.comment}}</p></td>
+				</tr>
+				<tr class="boton"><td colspan="2" class="boton"><button type="submit"> GO BACK</button></td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
+

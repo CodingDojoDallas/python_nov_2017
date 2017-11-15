@@ -1,0 +1,20 @@
+Error 1)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Solution: The database is password protected, needing to change the password in other to connect.
+
+Error 2)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'ssss'@'localhost' (using password: YES)")
+Solution: Invalid User, change the a valid one.
+
+Error 3)
+OverflowError: Python int too large to convert to C long
+Solution: Invalid port length, change it to a correct one.
+
+Error 4) 
+ValueError: invalid literal for int() with base 10: ''
+Solution: Invalid value for port. Changed it to the correcto one.
+
+Error 5)
+sqlalchemy.exc.ArgumentError: Could not parse rfc1738 URL from string ''
+Solution: Not setting the value for the key database URI.
+

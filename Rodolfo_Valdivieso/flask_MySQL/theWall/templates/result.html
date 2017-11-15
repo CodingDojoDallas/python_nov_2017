@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Wall</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="header">
+		<h1 class="titledojo">Coding Dojo Wall</h1>
+		<p class="welcome">Welcome {{first_name}} {{last_name}} || <a href="/goback">Log Off</a></p>
+	</div>
+	<div class="container2">
+		
+		{% with messages = get_flashed_messages() %}
+			    {% if messages %}
+			      {% for message in messages %}
+			        <p class="errores">{{message}}</p>
+			      {% endfor %}
+			    {% endif %}
+		{% endwith %}
+		<form  action="/post" method="post">
+			<h3 class="postMessage">Post a Message</h3>
+			<textarea class="postContent" rows="4" cols="50" name="post" id="post"></textarea>
+			<button class="message"> Post a message</button>
+		</form>
+
+		{% if results|length > 0 %}
+		<table>
+			{% for i in range(0,results|length) %}
+
+				{% if (i==0) or (results[i]['post_id'] != results[i-1]['post_id']) %}
+					<tr>
+						<td class="poster" colspan="2">{{results[i]['poster_name']}} - {{results[i]['date_posted']}}</td>
+					</tr>
+					<tr>
+						<td class="post" colspan="">{{results[i]['post_message']}}</td>
+						{% if results[i]['id'] == user_id %}
+							<td>
+								<form action="/delete" method="post">
+									<button>Delete Post</button>
+									<input type="hidden" name="post_id" id="post_id" value="{{results[i]['post_id']}}">
+								</form>
+							</td>
+						{% endif %}
+					</tr>
+				{% endif %}
+				{% if results[i]['comment_by'] != None %}
+					<tr>
+						<td>&nbsp;</td>
+						<td class="commentby">Commented By: {{results[i]['comment_by']}} - {{results[i]['date_comment']}}</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>--> {{results[i]['comment']}}</td>
+					</tr>
+				{% endif %}
+
+				{%  if   ((i+1)>=results|length)   or results[i]['post_id'] != results[i+1]['post_id']  %}
+					<tr>
+						<td colspan="2">
+							<form action="/comment" method="post">
+								<textarea rows="4" cols="50" name="comment" id="comment"></textarea>
+								<button class="
+								"> Post a comment</button>
+								<input type="text" hidden name="post_id" id="post_id" value="{{results[i]['post_id']}}">
+							</form>
+						</td>
+					</tr>
+				{% endif %}
+
+			{% endfor %}
+		</table>
+		{% endif %}
+	</div>
+</body>
+</html>

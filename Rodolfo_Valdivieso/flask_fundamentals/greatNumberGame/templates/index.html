@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Great Number Game</title>
+	<link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to the Great Number Game!!!</h1>
+		<h2>I'm thinking of a number between 1 and 10</h2>
+		<h2>Take a Guess</h2>
+		{%if message == "You WON!!!!, the number was:"%}
+			<form action="/won" method="post">
+				<h3 class="messageWon" name="test" >{{message}}{{number}}</h3>
+				<button>Play Again</button>
+			</form>
+		{%elif message == ""%}
+			<form action="/guess" method="post">
+				<input type="text" name="numberInserted" id="numberInserted">
+				<button>Guess!!!!!</button>
+			</form>
+		{%else%}
+			<form action="/guess" method="post">
+				<h3 class="message" name="test" >{{message}}</h3>
+				<input type="text" name="numberInserted" id="numberInserted">
+				<button>Guess!!!!!</button>
+			</form>
+		{%endif%}
+
+		<h3>Number: {{number}}</h3>
+	</div>
+</body>
+</html>

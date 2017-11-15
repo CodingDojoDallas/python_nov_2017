@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email Validation</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+	<div class="container2">
+		The Email address you entered {{email}} is a valid email address! Thank You!
+	</div>
+
+	<div class="container">
+		<form action="/goback" method="get">
+			<h1 class="title">Email Addresses Entered</h1>
+			<table>
+				
+				<tr>
+					<td class="tabletitle">Email</td>
+					<td class="tabletitle">Date</td>
+				</tr>
+				{% for i in range(0,emails|length) %}
+				<tr>
+					<td class="tablevalue">{{emails[i]['email']}}</td>
+					<td class="tablevalue">{{emails[i]['date']}}</td>
+				</tr>
+				{% endfor %}
+			</table>
+			<button> GO BACK</button>
+		</form>
+		<form  action="/delete" method="post"><button> DELETE</button></form>
+	</div>
+</body>
+</html>
+

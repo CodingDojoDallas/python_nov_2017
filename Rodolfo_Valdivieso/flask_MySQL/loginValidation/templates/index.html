@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Email Validation</h1>
+		{% if message != "" %}
+			<div class="container2">
+				{{message}}
+			</div>
+		{% endif %}
+
+		<div class="container" id="secondDiv">
+			{% with messages = get_flashed_messages() %}
+			    {% if messages %}
+			      {% for message in messages %}
+			        <p class="errores">{{message}}</p>
+			      {% endfor %}
+			    {% endif %}
+			{% endwith %}
+			<form action="/process" method="post">
+				<label for="">Email:</label>
+				<input type="text"  id="email" name="email" value="{{email}}">
+				<button>Submit</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Registration Form</h1>
+
+
+		<form action="/process" method="post">
+
+			{% with messages = get_flashed_messages() %}
+			    {% if messages %}
+			      {% for message in messages %}
+			        <p class="errores">{{message}}</p>
+			      {% endfor %}
+			    {% endif %}
+			{% endwith %}
+			<label for="">First Name:</label>
+			<input type="text"  id="firstName" name="firstName" value="{{firstName}}">
+			<label for="">Last Name:</label>
+			<input type="text"  id="lastName" name="lastName" value="{{lastName}}">
+			<label for="">Email:</label>
+			<input type="text"  id="email" name="email" value="{{email}}">
+			<label for="">Birth-Date:</label>
+			<input type="text"  id="birthday" name="birthday" {% if birthday== "" or birthday==null or birthday==None %}value='MM/DD/YYYY'{% else %}value='{{birthday}}'{% endif %}>
+			<label for="">Password:</label>
+			<input type="password"  id="password" name="password" value="{{password}}">
+			<label for="">Confirm Password:</label>
+			<input type="password"  id="password2" name="password2" value="{{password2}}">
+			<button> Submit</button>
+			
+		</form>
+		<form action="/reset" method="post">
+			<button> Reset</button>
+		</form>
+			{% if error == 0 %}
+				<h1>Thanks for submitting your information!!!</h1>
+			{% endif %}
+		
+	</div>
+</body>
+</html>
+

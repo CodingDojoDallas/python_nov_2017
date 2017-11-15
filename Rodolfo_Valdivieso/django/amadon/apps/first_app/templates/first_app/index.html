@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amadon</title>
+	<!-- Boostrap Core -->
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Amadon Store</h1>
+		<table class="table table-striped table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Price</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Actions</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in request.session.products %}
+				<form action="/amadon/buy" method="post">
+					{% csrf_token %}
+					<tr>
+				    	<td>{{i.item}}</td>
+				    	<td>{{i.price}} <input type="hidden" name="price" value="{{i.id}}"></td>
+				    	<td>
+			    			<select name="quantity" id="">
+			    				<option selected="selected" value="1">1</option>
+			    				<option value="2">2</option>
+			    				<option value="3">3</option>
+			    			</select>
+				    	</td>
+				    	<td><input type="submit" value="Buy!"></td>
+				    </tr>
+			    </form>
+			    {% endfor %}
+			</tbody>
+				
+		</table>
+		<form action="/clearsession" method="post">
+			{% csrf_token %}
+			<input type="submit" value="Clear Session">
+		</form>
+		
+	</div>
+
+<!-- scripts -->
+	<script src="../static/js/jquery-3.1.1.js"></script>
+	<script src="../static/js/jquery.easing.1.3.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="../static/js/myscrollto.js"></script>	
+</body>
+</html>

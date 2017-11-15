@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Session Word</title>
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<h1>Session Word</h1>
+	<div class="leftContainer">
+		<h2>Add a new Word</h2>
+		<form action="/addWord" method="post">
+			{% csrf_token %}
+			<input type="text" name="word" id="word"></input>
+			<p>Chosse color:</p>
+			<input class="radio" type="radio" name="color" value="red"> Red <br>
+			<input class="radio" type="radio" name="color" value="green"> Green<br>
+			<input class="radio" type="radio" name="color" value="blue"> Blue<br>
+			<input type="checkbox" name="font" value="font">Show in Big font!<br>
+			<input type="submit" value="Add to Session">
+		</form>
+	</div>
+	<div class="rightContainer">
+		<form action="/clearWord" method="post">
+			{% csrf_token %}
+			{% for i in request.session.history %}
+				<p><span class="{{ i.class }} {{ i.font }}">{{ i.word }} </span>- {{ i.message }}</p>
+			{% endfor %}
+			<input type="submit" value="Clear Session">
+		</form>
+	</div>
+	
+</body>
+</html>
