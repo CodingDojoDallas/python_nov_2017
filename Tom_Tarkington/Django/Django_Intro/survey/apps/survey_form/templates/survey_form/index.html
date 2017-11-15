@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action='/surveys/process' method="POST">
+        {% csrf_token %} <!-- mandatory any time you have a form -->
+            <p><label for="name">Your Name: </label><input type="text" name="name"></p>    
+            <p>
+                <label for="location">Dojo Location:</label>
+                <select name='location'>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="San Jose">San Jose</option>
+                    <option selected value="Seattle">Seattle</option>
+                    <option value="Tulsa">Tulsa</option>
+                    <option value="Washington D.C.">Washington D.C.</option>
+                </select>
+            </p>    
+            <p>
+                <label for="language">Favorite Language:</label>
+                <select name='language'>
+                    <option selected value="English">English</option>
+                    <option value="Bad Englush">Bad Englush</option>
+                </select>
+            </p>
+            <br>    
+            <p>Comment (optional):</p>
+            <p><textarea name="comment" rows="4" cols="30"></textarea></p>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Validation</title>
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul class=flashes>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+
+    <h1>Login</h1>
+    <form action='/email' method='POST'>
+      <label for="email">Email:<input type="text" name="email"></label>
+      <input type="submit" value="email">
+    </form>
+
+    <h1>Email Addresses Entered</h1>
+    <table>
+      {% for user in all_users: %}
+      <tr>
+        <td>{{ user['email'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
