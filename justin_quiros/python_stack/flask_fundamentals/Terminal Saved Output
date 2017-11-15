@@ -1,0 +1,989 @@
+Last login: Wed Nov  8 13:33:30 on ttys000
+JQuiros@Justins-MacBook-Pro:~$ ls
+Applications/  Downloads/     Library/       Pictures/
+Desktop/       Dropbox/       Movies/        Public/
+Documents/     Dropbox (Old)/ Music/         test/
+JQuiros@Justins-MacBook-Pro:~$ cd desktop
+JQuiros@Justins-MacBook-Pro:~/desktop$ ls
+2017 Spending.xlsx
+20673-CSC-010-FORM.pdf
+Annual Review/
+Audio Files/
+Computing Sales Data (CSV) _ Newline_files/
+Condo Docs/
+Demand Letter.docx
+DojoAssignments/
+FormW4_2016.pdf
+GSD Kit/
+GitHubRepoAssignment/
+HSD.jpg
+HTML/
+HTML5-cheat-sheet.pdf
+Hartford Lease/
+InsuranceIDCard.pdf
+Justin Quiros - Resume.doc
+Justin Quiros - Resume.pdf
+Loan Payoff.pdf
+Logic/
+Main St Lease/
+MySQL Countries.spfs/
+Pop The Knot - Guest List Draft.xlsx
+Python/
+Stella - Vet Visit 11-17-16.pdf
+Steph - LG/
+TxDMV - Vehicle Registration Renewal.pdf
+Wedding Guest List-Draft.xlsx
+_ Python Fundamentals.htm
+_ Python Fundamentals_files/
+become-a-web-developer.pdf
+codingdojo_html/
+nowayoutstems/
+pip.txt
+plotting/
+plotting.css
+plotting.html
+requirements.txt
+sql_connection.spf
+test/
+webFun_oct_2017/
+xCode/
+JQuiros@Justins-MacBook-Pro:~/desktop$ cd dojoassignments
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments$ ls
+MEAN/            WebFundamentals/ iOS/             python_nov_2017/
+Python/          assignments.txt/ netCore/
+Ruby/            commands.txt     new_project/
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments$ cd python_nov_2017
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017$ ls
+Andy_LaBorde/     README.md         brittney_jackson/ justin_quiros/
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017$ cd justin_quiros
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros$ ls
+animal.py              dict_tuples.py         names.py
+bike.py                dictionaries.py        pip.txt
+call_center.py         filterByType.py        practice.py
+car.py                 find_characters.py     product.py
+checkerboard.py        fun_with_functions.py  python_stack/
+coin_tosses.py         making_dicts.py        scores_and_grades.py
+compare_lists.py       math_dojo.py           stars.py
+debug.py               multsumavg.py          type_list.py
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros$ cd python_stack
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ ls
+flask_fundamentals/  md5/                 python_OOP/
+flask_mysql/         myEnvironments/      python_fundamentals/
+friends/             mySQL_assignments/   server.py
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ cd myenvironments
+JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/myenvironments$ source flaskenv/bin/activate
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/myenvironments$ ls
+flaskEnv/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/myenvironments$ cd ..
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ ls
+flask_fundamentals/  md5/                 python_OOP/
+flask_mysql/         myEnvironments/      python_fundamentals/
+friends/             mySQL_assignments/   server.py
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ cd flask_mysql
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/flask_mysql$ ls
+mysqlconnection.py   server.py
+mysqlconnection.pyc  templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/flask_mysql$ cd ..
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ ls
+flask_fundamentals/  md5/                 python_OOP/
+flask_mysql/         myEnvironments/      python_fundamentals/
+friends/             mySQL_assignments/   server.py
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ mkdir email_validation
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack$ cd email_validation
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ touch server.py
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ mkdir templates
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+server.py  templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ cd templates
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates$ ls
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates$ ls
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates$ touch index.html
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates$ cd ..
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+server.py  templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ mkdir static
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ touch static/style.css
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+server.py  static/    templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ touch mysqlconnection.py
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+mysqlconnection.py  server.py           static/             templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+mysqlconnection.py  server.py           static/             templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+Traceback (most recent call last):
+  File "server.py", line 9, in <module>
+    print mysql.query_db("SELECT * FROM ")
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/mysqlconnection.py", line 22, in query_db
+    result = self.db.session.execute(text(query), data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 1154, in execute
+    bind, close_with_result=True).execute(clause, params or {})
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:37:38] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 18, in index
+    friends = mysql.query_db(query)                           # run query with query_db()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/mysqlconnection.py", line 22, in query_db
+    result = self.db.session.execute(text(query), data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 1154, in execute
+    bind, close_with_result=True).execute(clause, params or {})
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (_mysql_exceptions.ProgrammingError) (1146, "Table 'email_db.friends' doesn't exist") [SQL: u'SELECT * FROM friends']
+127.0.0.1 - - [09/Nov/2017 07:37:38] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:37:38] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:37:38] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:37:40] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:37:40] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:37:41] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:38:55] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 18, in index
+    friends = mysql.query_db(query)                           # run query with query_db()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/mysqlconnection.py", line 22, in query_db
+    result = self.db.session.execute(text(query), data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 1154, in execute
+    bind, close_with_result=True).execute(clause, params or {})
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (_mysql_exceptions.ProgrammingError) (1146, "Table 'email_db.friends' doesn't exist") [SQL: u'SELECT * FROM friends']
+127.0.0.1 - - [09/Nov/2017 07:38:55] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:38:55] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:38:55] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:38:57] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:38:57] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:38:57] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:39:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:39:20] "GET /static/style.css HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+  File "server.py", line 19
+    return render_template('index.html', all_=) # pass data to our template
+                                              ^
+SyntaxError: invalid syntax
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+[{u'updated_at': u'NOW()', u'created_at': datetime.datetime(2017, 11, 9, 7, 34, 11), u'id': 1L, u'address': u'jq@google.com'}]
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:45:42] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+NameError: global name 'email_addresses' is not defined
+127.0.0.1 - - [09/Nov/2017 07:45:42] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:45:42] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:45:42] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:45:44] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:45:44] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:45:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:46:03] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+NameError: global name 'email_addresses' is not defined
+127.0.0.1 - - [09/Nov/2017 07:46:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:46:03] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:46:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:46:05] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:46:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:46:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:47:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:47:40] "POST /process HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 36, in process
+    mysql.query_db(query, data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/mysqlconnection.py", line 22, in query_db
+    result = self.db.session.execute(text(query), data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 1154, in execute
+    bind, close_with_result=True).execute(clause, params or {})
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (_mysql_exceptions.ProgrammingError) (1146, "Table 'email_db.emails' doesn't exist") [SQL: u'INSERT INTO emails (email, created_at) VALUES (%s, NOW())'] [parameters: (u'jqui@yahoo.com',)]
+127.0.0.1 - - [09/Nov/2017 07:47:40] "GET /process?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:47:40] "GET /process?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:47:40] "GET /process?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:47:40] "GET /process?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:47:41] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:49:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:49:22] "POST /process HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 36, in process
+    mysql.query_db(query, data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/mysqlconnection.py", line 22, in query_db
+    result = self.db.session.execute(text(query), data)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 1154, in execute
+    bind, close_with_result=True).execute(clause, params or {})
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception
+    exc_info
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+OperationalError: (_mysql_exceptions.OperationalError) (1054, "Unknown column 'email' in 'field list'") [SQL: u'INSERT INTO email_addresses (email, created_at) VALUES (%s, NOW())'] [parameters: (u'klp@google.com',)]
+127.0.0.1 - - [09/Nov/2017 07:49:22] "GET /process?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:49:22] "GET /process?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:49:22] "GET /process?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:49:23] "GET /process?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:49:23] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:49:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:49:58] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 07:49:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:50:40] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 22, in top-level template code
+    <td>{{ emails['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'emails' is undefined
+127.0.0.1 - - [09/Nov/2017 07:50:40] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:50:40] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:50:40] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:50:42] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:50:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:50:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:51:10] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 22, in top-level template code
+    <td>{{ emails['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'emails' is undefined
+127.0.0.1 - - [09/Nov/2017 07:51:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:10] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:12] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:12] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:12] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 07:51:40] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 22, in top-level template code
+    <td>{{ emails['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'emails' is undefined
+127.0.0.1 - - [09/Nov/2017 07:51:40] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:40] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:40] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:42] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:51:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:52:03] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 22, in top-level template code
+    <td>{{ address['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'address' is undefined
+127.0.0.1 - - [09/Nov/2017 07:52:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:52:03] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:52:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:52:05] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:52:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:52:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:48] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 20, in top-level template code
+    <td>{{ address['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'address' is undefined
+127.0.0.1 - - [09/Nov/2017 07:54:48] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:49] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:49] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:50] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:50] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:51] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:51] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 20, in top-level template code
+    <td>{{ address['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'address' is undefined
+127.0.0.1 - - [09/Nov/2017 07:54:51] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:51] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:51] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:52] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:54:52] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:55:00] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 20, in top-level template code
+    <td>{{ addrssess['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'addrssess' is undefined
+127.0.0.1 - - [09/Nov/2017 07:55:00] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:55:00] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:55:00] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:55:01] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:55:01] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 07:55:01] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:10:21] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 19, in index
+    return render_template('index.html', all_emails=email_addresses) # pass data to our template
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/templates/index.html", line 20, in top-level template code
+    <td>{{ address['email'] }}</td>
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+UndefinedError: 'address' is undefined
+127.0.0.1 - - [09/Nov/2017 08:10:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:10:21] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:10:21] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:10:22] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:10:23] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 08:11:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:11:51] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:11:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:12:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:13:11] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:13:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:13:26] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 08:19:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:19:22] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:19:22] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+  File "server.py", line 33
+    flash("Email cannot be blank!")
+        ^
+IndentationError: expected an indented block
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+  File "server.py", line 33
+    flash("Email cannot be blank!")
+        ^
+IndentationError: expected an indented block
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+  File "server.py", line 34
+    elif not EMAIL_REGEX.match(request.form['email']):
+                                                     ^
+IndentationError: unindent does not match any outer indentation level
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 08:24:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:39] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:24:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:45] "POST /process HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 35, in process
+    flash("Invalid Email Address!")
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/helpers.py", line 387, in flash
+    session['_flashes'] = flashes
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/werkzeug/local.py", line 350, in __setitem__
+    self._get_current_object()[key] = value
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/sessions.py", line 130, in _fail
+    raise RuntimeError('The session is unavailable because no secret '
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+127.0.0.1 - - [09/Nov/2017 08:24:45] "GET /process?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:45] "GET /process?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:45] "GET /process?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:45] "GET /process?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:46] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:24:46] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:11] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:25:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:16] "POST /process HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 35, in process
+    flash("Invalid Email Address!")
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/helpers.py", line 387, in flash
+    session['_flashes'] = flashes
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/werkzeug/local.py", line 350, in __setitem__
+    self._get_current_object()[key] = value
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/sessions.py", line 130, in _fail
+    raise RuntimeError('The session is unavailable because no secret '
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+127.0.0.1 - - [09/Nov/2017 08:25:16] "GET /process?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:16] "GET /process?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:16] "GET /process?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:17] "GET /process?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:17] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:28] "POST /process HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1997, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py", line 35, in process
+    flash("Invalid Email Address!")
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/helpers.py", line 387, in flash
+    session['_flashes'] = flashes
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/werkzeug/local.py", line 350, in __setitem__
+    self._get_current_object()[key] = value
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/flask/sessions.py", line 130, in _fail
+    raise RuntimeError('The session is unavailable because no secret '
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+127.0.0.1 - - [09/Nov/2017 08:25:28] "GET /process?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:29] "GET /process?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:29] "GET /process?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:29] "GET /process?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:25:29] "GET /process?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "server.py", line 6, in <module>
+    app.secret_key = 'KeepItSecretKeepItSafe'
+NameError: name 'app' is not defined
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ python server.py 
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 08:26:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:26:51] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:26:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:26:54] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:26:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:29:08] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:29:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:29:34] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:29:35] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+127.0.0.1 - - [09/Nov/2017 08:31:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:31:26] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:31:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:31:30] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:31:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2017 08:31:33] "POST /process HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2017 08:31:33] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ * Detected change in '/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/email_validation/server.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-161-754
+ç^C(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ ls
+mysqlconnection.py   mysqlconnection.pyc  server.py            static/              templates/
+(flaskEnv) JQuiros@Justins-MacBook-Pro:~/desktop/dojoassignments/python_nov_2017/justin_quiros/python_stack/email_validation$ touch templates/success.html

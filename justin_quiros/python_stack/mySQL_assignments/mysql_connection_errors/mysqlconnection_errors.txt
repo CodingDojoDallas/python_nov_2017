@@ -1,0 +1,19 @@
+  File "server.py", line 6, in <module>
+    mysql = MySQLConnector(app, 'world')
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/mysql_connection_errors/mysqlconnection.py", line 40, in MySQLConnector
+    return MySQLConnection(app, db)
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/mysql_connection_errors/mysqlconnection.py", line 15, in __init__
+    DATABASE_URI = "mysql://{}:{}@127.0.0.1:{}/{}".format(config['user'], config['password'], config['port'], config['database'])
+KeyError: 'database' <---database was spelled databases
+
+
+
+
+ine 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'roots'@'localhost' (using password: YES)")   <--- 'roots'@'localhost' should be 'root'@'localhost'
+
+
+  File "/Users/JQuiros/Desktop/DojoAssignments/python_nov_2017/justin_quiros/python_stack/myEnvironments/flaskEnv/lib/python2.7/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)") <--- password was "none" instead of "root"

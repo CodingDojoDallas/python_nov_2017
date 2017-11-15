@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Ninja Money</title>
+</head>
+<body>
+	<p>Your Gold: {{session['gold']}}</p>
+	<form action="/process_money" method="post">
+		<p>Farm</p>
+		<p>(Earns 10-20 golds)</p>
+		<input type="hidden" name="action" value="farm">
+		<button name="farm" method="post">Find Gold!</button>
+	</form>
+	<form action="/process_money" method="post">
+		<p>Cave</p>
+		<p>(Earns 5-10 golds)</p>
+		<input type="hidden" name="action" value="cave">
+		<button name="cave" method="post">Find Gold!</button>
+	</form>
+	<form action="/process_money" method="post">
+		<p>House</p>
+		<p>(Earns 2-5 golds)</p>
+		<input type="hidden" name="action" value="house">
+		<button name="house" method="post">Find Gold!</button>
+	</form>
+	<form action="/process_money" method="post">
+		<p>Casino</p>
+		<p>(Earns/Takes 0-50 golds)</p>
+		<input type="hidden" name="action" value="casino">
+		<button name="casino" method="post">Find Gold!</button>
+	</form>
+	<form action="/again" method="post">
+		<button name="again" method="post">Play Again</button>
+	</form>
+	<div>
+		<p>Activities:</p>
+		{{session['x']}}
+
+	</div>
+
+
+	<!-- <form action="/again" method="post">
+		<button name="again" method="post">Play Again</button>
+	</form> -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Ninja Money</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'ninja_app/css/style.css' %}">
+</head>
+<body>
+	<p>Your Gold: {{request.session.gold}}</p>
+	<div class="box">
+	<form action="/process" method="post">
+		{% csrf_token %}
+		<p>Farm</p>
+		<p>(Earns 10-20 golds)</p>
+		<input type="hidden" name="action" value="farm">
+		<button name="farm" method="post">Find Gold!</button>
+	</form>
+	</div>
+	<div class="box">
+	<form action="/process" method="post">
+		{% csrf_token %}
+		<p>Cave</p>
+		<p>(Earns 5-10 golds)</p>
+		<input type="hidden" name="action" value="cave">
+		<button name="cave" method="post">Find Gold!</button>
+	</form>
+	</div>
+	<div class="box">
+	<form action="/process" method="post">
+		{% csrf_token %}
+		<p>House</p>
+		<p>(Earns 2-5 golds)</p>
+		<input type="hidden" name="action" value="house">
+		<button name="house" method="post">Find Gold!</button>
+	</form>
+	</div>
+	<div class="box">
+	<form action="/process" method="post">
+		{% csrf_token %}
+		<p>Casino</p>
+		<p>(Earns/Takes 0-50 golds)</p>
+		<input type="hidden" name="action" value="casino">
+		<button name="casino" method="post">Find Gold!</button>
+	</form>
+	</div>
+	<form action="/again" method="post">
+		{% csrf_token %}
+		<button name="again" method="post">Play Again</button>
+	</form>
+	<div class="activity">
+		<p>Activities:</p>
+		{% for i in request.session.activity %}
+		<p><span class="{{i.color}}">{{i.activity}}</span>
+		{% endfor %}
+
+	</div>
+
+
+	<!-- <form action="/again" method="post">
+		<button name="again" method="post">Play Again</button>
+	</form> -->
+</body>
+</html>

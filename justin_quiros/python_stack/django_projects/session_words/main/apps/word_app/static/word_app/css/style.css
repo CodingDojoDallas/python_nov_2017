@@ -1,0 +1,48 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li{
+	style: none;
+	margin-left: 10px;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+}
+
+.form{
+	display: inline-block;
+	width: 250px;
+	border-right: solid 2px silver;
+	height: 600px;
+}
+
+.display{
+	display: inline-block;
+	width: 250px;
+	padding-left: 50px;
+	vertical-align: top;
+}
+
+.display button{
+	float: right;
+}
+
+.red{
+	color: red;
+}
+
+.green{
+	color: green;
+}
+
+.blue{
+	color: blue;
+}
+
+.big{
+	font-size: 30px;
+}
