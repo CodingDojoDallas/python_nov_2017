@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FacelessBook</title>
+</head>
+<body>
+	<h1>Friends</h1>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Friend Since</th>
+			<th></th>
+		</tr>
+		{% with friends = data %}
+			{% if friends %}
+				{% for friend in friends %}
+				<tr>
+					<td>{{friend.first_name}} {{friend.last_name}}</td>
+					<td>{{friend.age}}</td>
+					<td>{{friend.since}}</td>
+				</tr>
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+	</table>
+	<h1>Add a Friend</h1>
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			<ul>
+				{% for message in messages %}
+					<li class="error">{{ message }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		{% endwith %}
+
+	<form action="/process" method="POST">
+
+		<div><label for="first_name">First Name: </label><input type="text" name="first_name" id="first_name"></div>
+		<div><label for="last_name">Last Name: </label><input type="text" name="last_name" id="last_name"></div>
+		<div><label for="age">Age:</label><input type="text" name="age" id="age"></div>
+		<button type="submit">Submit</button>
+	</form>
