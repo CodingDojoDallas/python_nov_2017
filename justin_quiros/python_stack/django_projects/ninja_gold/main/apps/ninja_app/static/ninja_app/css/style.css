@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.box{
+	margin: 50px;
+	width: 161px;
+	height: 80px;
+	border: solid 2px black;
+	display: inline-block;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.activity{
+	border: solid 2px silver;
+	width: 480px;
+	margin-left: 335px;
+	overflow: scroll;
+	height: 200px;
+}
+
+.green{
+	color: green;
+}
+
+.red{
+	color: red;
+}

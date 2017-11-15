@@ -13,7 +13,7 @@
 		<h4>We charged your credit card for {{request.session.charged}}</h4>
 		<p>You have ordered {{request.session.qty}}</p>
 	</div>
-	<a href="http://localhost:8000/">Go Back</a>
+	<a href="/goback">Go Back</a>
 	<form action="/clear" method="post">
 		{% csrf_token %}
 		<button>Clear</button>
