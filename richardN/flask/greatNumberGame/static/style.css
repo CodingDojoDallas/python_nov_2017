@@ -1,0 +1,37 @@
+
+h1 {
+    text-align: left;
+}
+h4 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="enter"] {
+    margin-top: 30px;
+}
+
+.error {
+    background: darkred;
+    box-sizing: border-box;
+    padding: 30px;
+    width:400px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.success {
+    background: green;
+    box-sizing: border-box;
+    padding: 30px;
+    width:400px;
+    margin: 0 auto;
+    margin-top: 10px;
+}

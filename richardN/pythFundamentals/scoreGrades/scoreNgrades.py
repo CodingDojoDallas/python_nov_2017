@@ -1,8 +1,8 @@
 import random
 
-def grade(reps):
+def grade(x):
     print "Scores and Grades"
-    for x in range(0, reps):
+    for x in range(0, x):
         score = random.randint(60, 101)
         if score >= 60 and score <= 69:
             print "Score: ", score,"; Your grade is D"
@@ -16,4 +16,4 @@ def grade(reps):
             print "You failed"
     print "End of the program.  Bye!"
 
-grade(10)
+grade(15)

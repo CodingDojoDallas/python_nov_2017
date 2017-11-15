@@ -1,3 +1,16 @@
+
+
+def odd_even(range (len)1,2000)):
+    for x in a:
+        if x % 2 == 0:
+            print x, " this is an even number."
+        else:
+            print x, " this is an odd number."
+
+
+
+
+
 def odd_even():
     for x in range(1, 2001):
         if x % 2 == 0:

@@ -1,0 +1,6 @@
+#mySQL Connection Errors
+
+Traceback (most recent call last):
+  File "server.py", line 11, in <module>
+    'database': db, # we got db as an argument
+NameError: name 'db' is not defined
