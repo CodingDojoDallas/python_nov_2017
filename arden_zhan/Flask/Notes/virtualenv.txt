@@ -1,0 +1,15 @@
+virtualenv
+
+In order to use Flask (or any pip module) we'll need to use a virtualenv.
+
+What is a python virtual environment?
+    Tool used for creating unique sandboxes to control project dependencies. Each virtual environment can contain different versions of Python, Flask, or any combination of packages
+
+    virtualenv helps to stay organized, flexible when working on multiple projects that may have different dependencies. Allow using different software versions than system-wide installation of Python and pip installed packages.
+
+How does virtualenv help?
+    A good use case for using the virtualenv Python module is a scenario where we're working on multiple project each with varying dependencies
+    Project 0 - Python 2.7, Flask 0.10
+    Project 1 - Python 2.7, Flask 0.12, etc.
+
+Virtual environments are not single use. If start with another that has same dependencies as Project 0, then can use virtual environment that we already have.

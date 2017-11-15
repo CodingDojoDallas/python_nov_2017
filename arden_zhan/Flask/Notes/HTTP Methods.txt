@@ -1,0 +1,26 @@
+HTTP Methods
+The two most common are GET and POST
+
+GET
+Everytime visit webpage and page loads response, I am seeing the HTTP GET Method.
+    - used to request (get) information from a server
+    - when type in URL of desired website, am sending request to server to retrieve data which comes back as the page seen.
+    - the page is the response that has been packaged and returned to browser in form of HTML, CSS, js
+    - All routes so far have been for GET requests
+
+Can also use GET requests with forms, when sending insensitive info to a server through URL
+    - for example, searching in google returns URL of https://www.google.com/?gws_rd=ssl#q=ninjas
+
+POST
+We would not want to sign in to a website with our email and then use a GET method. Our info would be displayed in the URL and anyone would be able to see it! Even worse, the info could be saved/cached in browser history.
+
+To protect info, we want to use a POST request, which passes data behind the scenes in the HTTP request message body.
+    - these requests are never cached, never saved in history, can't be bookmarked, aren't limited by how much data that can be sent
+    - majority of forms will use POST requests to send data
+    - in general, most forms should be sent using POST method unless you need to give users ability to preserve query string, like in a google search.
+
+OTHER HTTP METHODS
+PUT, PATCH, DELETE
+- these exist for the express purpose of designing API's
+- are not supported methods in HTML code, and only work when being handled by JavaScript AJAX requests
+- will explain more when talking about RESTful APIs

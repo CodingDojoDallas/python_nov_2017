@@ -1,0 +1,7 @@
+Hidden Inputs
+
+hidden input fields are form fields that are hidden from user. used to transfer info between different pages
+- just an ordinary input element with type="hidden", so no visual representation in rendered HTML, but form element is usable by method where form is sent
+
+Multiple purposes, but going to focus on how to use field to navigate submitted forms to appropriate function / process
+

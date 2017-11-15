@@ -1,0 +1,43 @@
+Basic Form Validation
+
+Validation is more of a logical challenge than new code to learn
+
+logic: what data do we want to validate?
+checking if data is present
+making sure data is in correct format
+sending user to correct destination whether their data is valid or not
+alerting the user of their errors (if they exist)
+
+1. How to check if input field is empty and how to display the errors if it is
+- centers around using if, else statements that return TRUE or FALSE depending on if data is valid
+
+pseudo:
+IF the name in field in POST data is empty:
+    display validation errors
+ELSE:
+    display success message
+
+
+To check if name field is empty, can use python built in function len()
+
+len() returns length of string
+- if len(request.form['name']) < 1: basically same as session.get() == None
+
+
+
+Flash Messages on Server
+- flash messages are strings that exist for one redirect cycle. 
+- similar to session, can access flash messages through embedded python tags {{ }} & {% %} on views and display to user
+- Flash messages last for one redirect, session stays until it is manually popped
+
+Flash messages are good for validations where we only need to display the error or message temporarily
+- flash("string")
+
+
+Flash Messages on the Client
+Flask has function on client side that allows us to get all flash messages as list
+get_flashed_messages()
+
+with messages = get_flashed_messages()
+    - the with messages here declares variable in template that we can use within specific scope
+    

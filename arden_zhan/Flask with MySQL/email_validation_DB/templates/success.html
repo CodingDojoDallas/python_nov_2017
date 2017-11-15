@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Email Validation - Success</title>
+</head>
+<body>
+    <h1>Email Validation - Success</h1>
+    <p>
+        The email address you entered {{ success_email }} is a VALID email address! Thank you!
+    </p>
+
+    <h2>Email Addresses Entered:</h2>
+    <ul>
+        {% if all_emails != Null %}
+            {% for email in all_emails: %}
+                <li>{{ email['email'] }}, {{ email['created_at'] }}</li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</body>
+</html>

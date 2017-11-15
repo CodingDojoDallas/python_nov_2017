@@ -1,0 +1,11 @@
+button {
+    display: block;
+}
+
+.perfect {
+    background: green;
+}
+
+.wrong {
+    background: red;
+}

@@ -1,0 +1,63 @@
+Sessions
+
+How to pass data between routes. Route can handle form submit, but doesn't do anything with data to present to view
+
+
+We want POST data (from submitted form) to be stored, so that we can access it from our functions. We will need to use Session
+
+Session:
+What is it? What does it do? Why do I need it?
+
+In a normal user's interaction with a web site, that user will usually make tens, if not hundreds, of requests to a given web server.
+Each step along the way is a full HTTP request / response cycle. Browser sends request, browser renders response from server
+
+HTTP request/response cycles are stateless
+Each cycle instance is independent and ignorant of any instances that came before / will come after it
+
+So how does site remember data about user if each HTTP cycle instance is stateless?
+- sites like retailers use persistent data storage
+- comes in many forms, like a database
+- also comes in form of writing to file, which is what session does
+
+
+state - data that is kept track for use in subsequent processes
+
+
+Cookies
+- Flask uses cookies to store data like sessions
+- Django stores session data in the database, sending secure keys to be used to retrieve data
+
+
+Storage type
+Database
+    - permanent until deleted
+    - use examples: encrypted passwords, encrypted info like credit card, photos
+Cookies
+    - lasts as long as browser sets it
+    - use examples: user selected language
+
+Session in app / 
+need to import session to use
+from flask import session
+
+Need to use a secret key in server.py to run
+app.secret_key = "SEKRITKEY"
+
+Now whenever we use variables, can store into session
+session['name'] = request.form['name']
+
+Can access from template as well, so don't need to pass name arguments in render_template() functions
+
+
+Summary
+- session is way to store info unique to particular client
+- session uses cookies to store some or all of required info
+- when want to access / modify data over multiple redirects, use session
+- can use session in both server.py as well as templates
+- even though you have access to the session, should not abuse the amount of info stored in it.
+
+- Store only what you need in the session
+
+- once we incorporate database, should limit what you store in session to most minimal amount of data possible
+
+

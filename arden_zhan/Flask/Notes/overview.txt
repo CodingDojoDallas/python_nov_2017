@@ -1,0 +1,14 @@
+Python
+    - vars, loops, lists, conditionals
+    - functions
+    - OOP classes, attributes, methods
+
+Flask
+    - micro-framework
+    - using to teach the main components of web applications
+
+- Rendering Templates
+- Redirecting
+- Form data
+- GET & POST requests
+- Session

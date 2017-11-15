@@ -1,0 +1,25 @@
+Flask Templates
+
+2 special inputs that we can use to insert Python-like code into Flask Templates
+- code is limited
+- cannot use full range of python functionality in template (html file)
+- some of python's advanced functionality is missing
+
+{{some variable}}
+{{% some expression %}}
+
+return render_template("index.html", phrase="hello", times=5)
+{% for x in range(0, times): %}
+    {{phrase}}
+{% endfor %}
+
+
+- can technically do a lot of logic in templates, but should try to limit as much as possible
+- better to do logic in python code
+- if too much logic in template, can slow down server response times
+
+
+Flask uses Jinja2
+    - Jinja2 has a lot of built-in features that allow placing dynamic info on HTML pages
+    - should check Jinja2 documentation for templates 
+    - http://jinja.pocoo.org/docs/dev/templates/

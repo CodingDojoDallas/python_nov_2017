@@ -1,0 +1,27 @@
+Advanced Validation
+- for example, checking if email is valid.
+- can use regex, regular expression
+
+regex: sequence of characters that defines a search pattern
+- can be used to match a string that follows a pattern
+
+Python regex for matching email example:
+r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$'
+
+# the "re" module will let us perform some regular expression operations
+import re
+# create a regular expression object that we can use run operations on
+EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
+
+EMAIL_REGEX is an expression object,
+    - used to run operations on
+
+
+Can use EMAIL_REGEX object's .match() method
+    - return None if no match can be found. If argument matches, then object instance is returned
+
+
+Other Validation Tools:
+str.isalpha() -- returns boolean that shows if string is only alphabetic characters
+time.strptime(string, format) -- changes string to a time using given format
+

@@ -1,0 +1,36 @@
+Basic Routes
+
+Routes are essentials for any web application. Route is like a variable name we assign to a request.
+    - job is to communicate to server what kind of info the client needs
+    - route name is attached to route on server that points to specific set of instructions
+    - instructions contain info about:
+        - how to interpret data being sent
+        - operations that need to be completed
+        - response that should be sent back
+    - these instructions are the code we'll be creating
+
+Every route has two parts
+    1. HTTP method (GET, POST, PUT, PATCH, DELETE)
+    2. URL
+
+GET
+We are handling the root route, '/', route with hello_world() that renders index.html
+The HTTP verb is GET
+
+ALL ROUTES DEFAULT TO GET!
+If no route explicitly mentioned, it's a GET route. 
+GET routes mostly used for serving pages or rendering templates.
+
+
+
+Route Structure
+Generic Route:
+@app.route('/some_route')
+def some_function_name():
+    //code
+
+above route would be triggered when user requests
+localhost:5000/some_route
+
+Our route rules are used to define what comes after the initial forward-slash.
+When request matching our routing rules is received by server, function that immediately follows the @app.route('/some_route/) is invoked

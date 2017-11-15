@@ -1,0 +1,23 @@
+Flask is able to send HTML files to the client in response to a request. 
+
+Templates, also known as views
+
+Templates are HTML files that are interpreted by Flask and then served to the client. 
+    - rendering Templates
+    - every web development framework provides a way to render templates
+    - can pass data to template and display it dynamically
+
+All templates placed in folder called templates
+
+In HTML file:
+    - within p tags can have text with {{variable}}
+    - return render_template("index.html", variable="Jay")
+
+    {{variable}} in the HTML file will be replaced by what was passed in render_template function
+
+
+Flask uses templating engine called Jinja2 to parse through files looking for {{}}
+    - replaces variables with real values,
+    - and sends a complete HTML file back to the client
+
+Can also insert Python-like code into template

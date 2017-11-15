@@ -1,0 +1,26 @@
+Advanced Routing
+One to pass data from client to server is via forms. Other ways:
+
+
+Passing data from the client to the server through the URL
+- we can already define basic route handlers that take care of static routes
+- we want to have route '/users/___' where anything that comes after '/users/' is passed as variable to route handlers
+    - '/users/jay' displays page that says Hello Jay 
+    - '/users/anna' displays page that says Hello Anna 
+    - both without having to write 2 different route handlers
+
+
+Route just needs to have placeholder after the '/users/'
+- placeholder designated in <> tags
+- name inside tags should match parameter name passed to the route handler function
+
+@app.route('/route/with/<vararg>')
+def handler_function(vararg):
+  # here you can use the variable "vararg"
+  # if you want to see what our argument looks like
+  print vararg
+  # we could do other things with this information from this point on such as:
+  # use it to retrieve some records from the database
+  # render a particular template
+
+
