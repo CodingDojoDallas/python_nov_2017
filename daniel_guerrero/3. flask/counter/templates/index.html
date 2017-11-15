@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+	<div class="wrapper">
+	<h1>Welcome to Cowboy Nation!</h1>
+
+	<h4>How many touchdowns are the Cowboys gonna make against the Patriots?  Is it ... {{ session.counter }} ?</h4>
+
+	<a href="/add"> Go ahead and add 2! </a>
+
+	<br>
+	<br>
+
+	<a href="/clear"> Go ahead and clear your counter! </a>
+	</div>
+
+</body>
+</html>

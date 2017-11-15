@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Great Number Game</title>
+</head>
+<body>
+	<h1>Welcome to the Great Number Game!</h1>
+
+	<p>I am thinking of a number between 1 and 100</p>
+	<br>
+	
+
+	<form action="/guessed" method="POST">
+
+	<label>Take a Guess</label>
+	<input type="number" name="number">
+	<button type="submit">Submit Your Number!</button>
+	</form>
+
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			<ul class=flashes>
+				{% for message in messages %}
+					<li>{{ message }}</li>
+
+					{% if session['Correct'] == True %}
+						<form action="/reset" method="POST">
+						<button type="submit">Reset</button>
+						</form>
+					{% endif %}
+
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endwith %}
+
+</body>
+</html>

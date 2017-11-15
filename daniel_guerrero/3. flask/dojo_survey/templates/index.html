@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+</head>
+<body>
+	<h1>You are in the Index Page</h1>
+
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			<ul class=flashes>
+				{% for message in messages %}
+					<li>{{ message }}</li>	
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endwith%}
+
+	<form action="/result" method="POST">
+
+		<label>Your Name:</label>
+		<input type="text" name="name"  />
+
+		<label>Dojo Location:</label>
+		<select name="location">
+			<option value="dallas">Dallas</option>
+			<option value="san_jose">San Jose</option>
+			<option value="washington_dc">Washington DC</option>
+			<option value="los_angeles">Los Angeles</option>
+		</select> 
+
+		<label>Favorite Language: </label>
+		<select name="fav">
+			<option value="python">Python</option>
+			<option value="ruby">Ruby on Rails</option>
+			<option value="javascript">JavaScript</option>
+		</select>
+
+		<label>Comment (optional):</label>
+		<input type="comment" name="comment">
+		<button type="submit">Submit</button>
+	</form>
+
+</body>
+</html>

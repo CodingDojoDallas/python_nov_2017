@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result Page</title>
+</head>
+<body>
+	<h1>You are in the Result Page</h1>
+
+	<h1>Submitted Info</h1>
+
+
+	<p>Name:  {{ content.name }}</p>
+	<p>Location:  {{ content.location }}</p>
+	<p>Language:  {{ content.fav }}</p>
+	<p>comment:  {{ content.comment if content.comment != "" else "No comment" }}</p>
+
+	
+	<a href="/">Back to Survey</a>
+
+</body>
+</html>

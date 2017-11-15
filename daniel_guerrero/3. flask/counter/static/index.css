@@ -1,0 +1,16 @@
+.wrapper{
+	height: 500px;
+	width: 600px;
+	padding:10px;
+	text-align: center;
+	background-color: gray;
+}
+
+h1{
+	color:blue;
+}
+h4{
+	height: 80px;
+	width: 522px;
+	margin-left: 50px;
+}
