@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ninja Time</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Disappearing Ninja</h1>
+			</div>
+			<div id="content">
+				<h3>Donatello</h3>
+				<img src="{{url_for('static', filename='img/donatello.jpg')}}">
+			</div>
+			<div id="footer">
+				<a href="/ninja">TMNT</a>
+				<a href="/ninja/orange">Michealangelo</a>
+				<a href="/ninja/blue">Leonardo</a>
+				<a href="/ninja/purple">Donatello</a>
+				<a href="/ninja/red">Raphael</a>
+			</div>
+		</div>
+	</body>
+</html>

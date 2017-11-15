@@ -1,0 +1,25 @@
+#container{
+	width: 1000px;
+	margin: auto;
+	color: green;
+	border: 5px solid black;
+    text-align: center;
+}
+#header, #footer{
+	margin: auto;
+	background: black;
+	border: 5px solid green;
+}
+#content{
+	border: 5px solid black;
+	width: 990px;
+	height:375px;
+}
+img{
+	height: 300px;
+}
+a{
+	color: green;
+	text-decoration: none;
+	margin: 10px;
+}

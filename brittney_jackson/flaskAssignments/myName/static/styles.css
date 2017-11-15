@@ -1,0 +1,23 @@
+#container{
+	margin: auto;
+	font-family: cursive;
+	background: black;
+	color: purple;
+	border: 10px solid purple;
+	border-radius: 15px;
+	text-align: center;
+}
+#header{
+	margin: auto;
+	color: white;
+	border: 5px solid white;
+}
+input{
+	width: 300px;
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}

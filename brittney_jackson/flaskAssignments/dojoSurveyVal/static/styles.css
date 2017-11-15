@@ -1,0 +1,49 @@
+*{
+	background: black;
+}
+#container{
+	width: 1000px;
+	margin: auto;
+	font-family: cursive;
+	background: black;
+	color: purple;
+	padding: 50px 0px;
+	border: 10px solid purple;
+	border-radius: 15px;
+	text-align: center;
+}
+#header{
+	margin: auto;
+	color: white;
+	/*border: 5px solid white;*/
+}
+h1{
+	margin: 0px;
+}
+
+input{
+	padding: 5px;
+	background: white;
+	width: 200px;
+}
+textarea{
+	background: white;
+	width: 200px;
+	padding: 10px 5px;
+}
+select{
+	background: white;
+}
+#form{
+	width: 500px;
+	margin: auto;
+	text-align: left;
+	display: block;
+}
+.sub{
+	margin-left: 186px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
