@@ -36,6 +36,6 @@ def sucess():
 @app.route('/delete', methods=['POST'])
 def delete():
 	id = int(request.form['id'])
-	mysql.query_db("DELETE FROM email WHERE id = :id", {"id": id })
+	mysql.query_db("DELETE FROM emails WHERE id = :id", {"id": id })
 	return redirect('/page1')
 app.run(debug=True)
