@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+</head>
+<body>
+	<center><h1>Counter</h1></center>
+	<form action='/reload' method="post">
+	<br>
+	<center><button>+2</button></center>
+	<br>
+	</form>
+	<center>{{session['counter']}} :Times</center>
+	<form action='/reset' method="post">
+	<br>
+	<center><button>Return</button></center>
+	</form>
+</body>
+</html>
