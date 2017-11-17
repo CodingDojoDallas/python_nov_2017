@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojo Survey Index</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css"><!-- CSS is not woring-->
+	<style>
+		.dojoform ul{
+			width: 750px;
+			list-style-type: none;
+			list-style-position: outside;
+			margin: 0px;
+			padding: 0px;
+		}
+		.dojoform li{
+			padding: 20px;
+			position: relative;
+		}
+		.dojoform label{
+			width: 150px;
+			margin-top: 3px;
+			display: inline-block;
+			float:left;
+			padding: 3px;
+		}
+		.dojoform input{
+			height: 20px;
+			width: 220px;
+			padding: 5px,8px;
+		}
+		button{
+    		background-color: #76A5AF;
+    		color: white;
+    		margin-left: 294px;
+    		padding: 4px;
+    		margin-top: -9px;
+		}
+
+	</style>
+
+</head>
+<body>
+	{% with messages = get_flashed_messages() %}
+		{%if messages%}
+			{% for message in messages%}
+				<p>{{message}}</p>
+			{% endfor%}
+		{%endif%}
+	{%endwith%}		
+	<form class ="dojoform" action="/result", method="post">
+		<ul>
+			<li>
+				<label for ="name">Your Name</label>
+				<input type="text" name="name" placeholder="enter name here"  />
+			</li>
+			<li>
+				<label for ="location">Dojo Location</label>
+				<select name ="location">
+					<option value="select">--Select--</option>
+					<option value="san jose">San Jose</option>
+					<option value="dallas">Dallas</option>
+					<option value="tulsa">TULSA</option>
+					<option value="chicago">CHICAGO</option>
+				</select>
+			</li>
+			<li>
+				<label for ="language">Favorite Language</label>
+				<select name =language>
+					<option value="select">--Select--</option>
+					<option value="python">Python</option>
+					<option value="javscript">Javascript</option>
+				</select>
+			</li>
+			<li>
+				<label for ="comment">Comment (Optional)</label>
+				<textarea value ="comment" name="comment"></textarea>
+			</li>
+			</ul>
+				<button>Button</button>
+	</form>
+</body>
+</html>

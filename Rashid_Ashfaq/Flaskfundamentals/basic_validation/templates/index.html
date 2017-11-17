@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Validation Example</title>
+</head>
+<body>
+  <h1>Enter a Valid(Any)Email!</h1>
+  {% with messages = get_flashed_messages() %}
+    {% if messages%}
+      {% for message in messages%}
+        <p>{{message}}</p>
+      {% endfor%}
+    {% endif %}
+  {% endwith%}
+  <form action='/process' method="POST">
+    Email:<input type="text" name="email">
+    <input type="submit" name="Submit">
+    
+  </form> 
+</body>
+</html>

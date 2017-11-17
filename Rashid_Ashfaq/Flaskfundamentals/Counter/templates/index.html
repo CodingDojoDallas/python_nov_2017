@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<style>
+
+		h1{
+			color: green;
+			margin-top: 200px;
+		}
+	
+	</style>
+</head>
+<body>
+		<h1>Counter</h1>
+		{{session['counter']}}
+	<div>
+		<form  action="/addcount" method="post" >
+			<button>ADD 2</button>
+		</form>
+		<form  action="/resetcount" method="post">
+			<button>Reset</button>
+		</form>
+	</div>
+</body>
+</html>
