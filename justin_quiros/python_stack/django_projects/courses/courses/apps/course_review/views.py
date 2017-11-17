@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Course
 
 # Create your views here.
@@ -24,5 +25,11 @@ def delete(request, id):
 	return redirect('/')
 
 def create(request):
-	Course.objects.create(name=request.POST['name'], desc=request.POST['desc'])
+	errors = Course.objects.course_validation(request.POST)
+	if len(errors):
+		for tag, error in errors.iteritems():
+			messages.error(request, error, extra_tags = tag)
+		return redirect('/')
+	else:
+		Course.objects.create(name=request.POST['name'], desc=request.POST['desc'])
 	return redirect('/')

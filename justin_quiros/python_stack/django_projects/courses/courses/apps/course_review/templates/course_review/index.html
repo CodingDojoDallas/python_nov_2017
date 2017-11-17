@@ -9,7 +9,9 @@
 <body>
 
 	<h3>Add a new course</h3>
-
+	{% for message in messages %}
+		{{message}}
+	{% endfor %}
 	<form action="/courses/create" method="post">
 		{% csrf_token %}
 		<label for="name">Name:</label>
