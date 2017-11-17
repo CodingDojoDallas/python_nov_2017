@@ -25,10 +25,6 @@ def index():
 @app.route("/result", methods = ['POST'])
 def result():
 
-	First_name = request.form['fname']
-	Last_name = request.form['lname']
-	print First_name
-	print Last_name
 	return render_template("results.html", First_name = request.form['fname'], Last_name = request.form['lname'])
 
 app.run(debug=True)
