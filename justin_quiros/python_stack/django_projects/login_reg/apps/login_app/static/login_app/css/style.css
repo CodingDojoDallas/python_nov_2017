@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+input{
+	float: right;
+}
+
+h1{
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 215px;
+	margin-bottom: 50px;
+	margin-left: 10PX;
+	border: solid 2px black;
+	padding: 10px 5px 25px 5px;
+}
