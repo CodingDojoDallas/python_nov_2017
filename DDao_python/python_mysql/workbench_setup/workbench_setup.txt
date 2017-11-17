@@ -1,0 +1,6 @@
+To do queries directly in the database, you go into your
+connections; in the query box, type in your query statements.
+
+To connect to a specific database, type in "USE [database_name]"
+in the query box. ex. " USE twitter " <-- that will connect me
+to my Twitter database.  
