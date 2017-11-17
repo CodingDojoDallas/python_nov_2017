@@ -1,0 +1,17 @@
+.container{
+		width: 700px;
+		margin-top: 50px;
+		display: inline-block;
+		text-align: center;
+		margin-left: 150px;
+}
+h2{
+	color: blue;
+	text-align: center;
+}
+#box{
+	width: 200px;
+	height: 200px;
+	padding-top: 20px;
+	text-align: center; 
+}

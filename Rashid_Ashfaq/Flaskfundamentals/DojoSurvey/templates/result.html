@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojo Survey Index</title>
+	<style>
+		table{
+			border: 2px solid black;
+			width: auto;
+			margin: 200px;
+			padding-bottom: 30px;
+			text-align: left;
+		}
+	
+		h2{
+		text-decoration: underline;
+		text-align: left;
+		}
+		button{
+		margin-top: 19px;
+  	 	margin-left: 204px;
+    	padding: 6px;
+    	padding-left: 15px;
+    	padding-right: 15px;
+    	background-color: #76A5AF;
+    	color: white;
+    	border: 1px solid black;
+		}
+		th{
+			 width: 203px;
+    		display: inline-block;
+		}
+		td{
+			
+   			 display: inline;
+		}
+	</style>
+</head>
+<body>
+		{% with messages = get_flashed_messages() %}
+			{%if messages%}
+				{% for message in messages%}
+					<p>{{message}}</p>
+				{% endfor%}
+			{%endif%}
+		{%endwith%}	
+
+	<form action="/back" method="Get">
+	<table >
+		<tr>
+			<th><h2>Submitedt Info</h2></th>
+		</tr>
+		<tr> 
+			<th>Name:</th><td>{{name}}</td>
+		</tr>
+		<tr>
+			<th>Location:</th><td>{{location}}</td>
+		</tr>
+		<tr>
+			<th>Language:</th><td> {{language}}</td>
+		</tr>
+		<tr>
+			<th>Comment:</th><td>{{comment}}</td>
+		</tr>
+		<tr>
+			<td>
+				<button>Back</button>
+			</td>
+		</tr>		
+</body>
+</html>

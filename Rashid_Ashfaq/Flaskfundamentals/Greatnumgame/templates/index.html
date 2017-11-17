@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Great Number Game</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='css/style.css')}}">
+	<style>
+	.container{
+		width: 700px;
+		margin-top: 50px;
+		display: inline-block;
+		text-align: center;
+		margin-left: 150px;
+	}
+	h2{
+		color: blue;
+		text-align: center;
+	}
+	#box{
+		width: 200px;
+		height: 150px;
+		padding-top: 40px;
+		text-align: center; 
+		margin-left:390px;
+	}
+
+	</style>
+</head>
+<body>
+	<div class= "container">
+	<h1>Welcome to the Great Number Game!</h1>
+	<p>I am thinking of a number between 1 and 100</p>
+	<p>Take a guess!</p>
+	</div>
+	{% if result %}
+	<div id="box" style= "background-color:  {{color}}" >
+		<p>{{result}}</p>
+		{% if flag == "True" %}
+		<form action="/reset" method="get">
+			<input type="submit" value="Play Again">
+		</form>
+		{% endif %}
+	</div>
+	{% endif %}
+	{% if flag != "True" %}
+	<form class= "container" action="/guessnumber" method="post">
+		<input type="number" name="number">
+		<input type="submit" value="Submit">
+	</form>
+	{% endif %}
+</body>
+</html>

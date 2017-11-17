@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css"><!-- CSS is not woring-->
+	<style>
+		.form ul{
+			width: 750px;
+			list-style-type: none;
+			list-style-position: outside;
+			margin: 0px;
+			padding: 0px;
+		}
+		.form li{
+			padding: 20px;
+			position: relative;
+		}
+		.form label{
+			width: 150px;
+			margin-top: 3px;
+			display: inline-block;
+			float:left;
+			padding: 3px;
+		}
+		.form input{
+			height: 20px;
+			width: 220px;
+			padding: 5px,8px;
+		}
+		button{
+    		background-color: #76A5AF;
+    		color: white;
+    		margin-left: 294px;
+    		padding: 4px;
+    		margin-top: -9px;
+		}
+
+	</style>
+
+</head>
+<body>	
+	<!--{% with messages = get_flashed_messages() %}
+    	{% if messages %}
+      		{% for message in messages %}
+        		<p>{{message}}</p>
+      		{% endfor %}
+    	{% endif %}
+  	{% endwith %}!-->
+  	{% with messages = get_flashed_messages(with_categories=true) %}
+  		{% if messages %}
+    		<ul class=flashes>
+    			{% for category, message in messages %}
+      				<li class="{{ category }}">{{ message }}</li>
+    			{% endfor %}
+    		</ul>
+  		{% endif %}
+	{% endwith %}
+	<form class ="form" action="/process", method="post">
+		<ul>
+			<li>
+
+				<label for ="email">Email</label>
+				<input type="text" name="email" placeholder="enter email here"  />
+			</li>
+			<li>
+				<label for ="first_name">First Name</label>
+				<input type="text" name="first_name" placeholder="enter firstname here">
+			</li>
+			<li>
+				<label for ="last_name">Last Name</label>
+				<input type="text" name="last_name" placeholder="enter lastname here">
+			</li>
+			<li>
+				<label for ="password">Password</label>
+				<input type="password" name="password" placeholder="enter password here">
+			</li>
+			<li>
+				<label for ="confrim">Confrim Password</label>
+				<input type="password" name="confrim" placeholder="re-enter password here">
+			</li>
+			<li>
+				<label for = dob>Date Of Birth</label>
+				<input type="Date" name="date" placeholder ="mm/dd.yy">
+			</li>
+			</ul>
+				<button>Submit</button>
+	</form>
+</body>
+</html>
