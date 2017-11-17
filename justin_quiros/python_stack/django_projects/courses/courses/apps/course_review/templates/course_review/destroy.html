@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Courses</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'ninja_app/css/style.css' %}">
+</head>
+<body>
+
+	<h3>Delete a course</h3>
+	<h3>Are you sure you want to delete the following course?</h3>
+	<p>Name: {{name}}</p>
+	<p>Description: {{desc}}</p>
+	<a href="/courses/delete/{{id}}">remove</a>
+</body>
+</html>
