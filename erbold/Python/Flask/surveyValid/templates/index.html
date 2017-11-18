@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form action="/answer" method="post">
+		First name: <input type="text" name="fname"><br>
+		Last name: <input type="text" name="lname"><br>
+		Comment: <input type="text" name="comment"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	{% with errors = get_flashed_messages(category_filter=["error"]) %}
+	{% if errors %}
+	<div class="alert-message block-message error">
+		{%- for msg in errors %}
+			<p>{{ msg }}</p>
+		{% endfor %}
+	</div>
+	{% endif %}
+	{% endwith %}
+
+
+</body>
+</html>
