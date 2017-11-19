@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Add Book and Review</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'review_app/css/style.css' %}">
+</head>
+<body class="container">
+	<div class="book_page">
+        <p><a href="/books">Home</a> | <a href="/logout">Logout</a></p>
+        <h1>{{book.title}}</h1>
+        <h2>{{book.author.name}}</h2>
+        <div class="reviews">
+            <h3>Reviews:</h3>
+            <hr>
+            {% for review in book.reviews.all %}
+                <p>Rating: {{review.rating}}</p>
+                <p><a href="/user/{{review.reviewer.id}}">{{review.reviewer.name}}</a> says: {{review.review}}</p>
+            <p>Posted on: {{review.created_at}}</p>
+                        {% if request.session.user_id == review.reviewer_id %}
+                        <a href="/delete/{{review.id}}">Delete this Review</a>
+                        {% endif %}
+            <hr>
+            {% endfor %}
+                    
+        </div>
+        <form action="/books/{{book.id}}/add" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea name="review"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit Review">
+        </form>
+	</div>
+</body>
+</html>

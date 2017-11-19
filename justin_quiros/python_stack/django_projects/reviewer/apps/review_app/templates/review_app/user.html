@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>User Reviews</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'review_app/css/style.css' %}">
+</head>
+	<body>
+		<p><a href="/books">Home</a> | <a href="/books/add">Add book and review</a> | <a href="/logout">Logout</a></p>
+		<h2>User Alias: {{user.alias}}</h2>
+		<h3>Name:   {{user.name}}</h3> 
+		<h3>Email:   {{user.email}}</h3> 
+		<h3>Total Reviews:   {{user.reviews_left.all.count}}</h3>
+		<hr>
+		<h1>Posted Reviews on the Folowing Books</h1>
+		{% for book in unique_book_reviews %}
+		<h4><a href="/books/{{book.id}}">{{book.title}}</a></h4>
+		{% endfor %}
+	</body>
+</html>
