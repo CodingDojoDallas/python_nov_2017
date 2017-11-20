@@ -4,7 +4,7 @@ from django.utils.crypto import get_random_string
 
 def index(request):
 
-	if request.session['attempt'] == None:
+	if request.session.get('attempt') == None:
 		request.session['attempt'] = 1
 	else:
 		request.session['attempt'] += 1
