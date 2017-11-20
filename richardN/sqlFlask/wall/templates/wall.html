@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Wall</title>
+</head>
+
+<body>
+	<div class='navbar'>
+		<h1>CodingDojo Wall</h1>
+		{% for user in users: %}
+			<h4>Welcome {{user_id}}</h4>
+		{% endfor %}
+		<a href="logoff">log off</a>
+	</div>
+	<hr>
+	<h3>Post a message</h3>
+	<form action="/messages" method="post">
+		<div class="form-group">
+			<textarea name="message" cols="100" rows="5"></textarea>
+		</div>
+		<input type="submit" value="Post a message">
+	</form>
+	<br>
+	{% for message in messages %}
+	<div class='row justify-content-center'>
+		<div class='col-md-10 message'>
+			<p><b>{{message.user}}-</b>{{message.created_at}}{{message.message}}</p>
+
+			{% for comment in comments %} 
+				{% if comment.message_id == message.id %}
+					<p><b>{{comment.user}}-</b>{{comment.created_at}}{{comment.comment}}</p>
+				{% endif %} 
+			{% endfor %}
+			<h3>Post a comment</h3>
+			<form action="/comments" method="post">
+				<div class="form-group">
+					<textarea name="comment" cols="80" rows="5"></textarea>
+				</div>
+				<input type="hidden" name='message_id' value='{{message.id}}'>
+				<input type="submit" value="Post a comment">
+			</form>
+		</div>
+	</div>
+	{% endfor %}
+
+</body>
+
+</html>
