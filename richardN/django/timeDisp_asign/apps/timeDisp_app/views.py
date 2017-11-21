@@ -9,7 +9,7 @@ from django.shortcuts import render, HttpResponse, redirect
 from time import gmtime, strftime
 
 def index(request):
-    response = "The Time and Date is:"
+    response = "The Date and Time is:"
     return HttpResponse(response)
 
 def index(request):
