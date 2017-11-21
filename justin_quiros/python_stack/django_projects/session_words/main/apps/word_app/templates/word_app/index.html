@@ -36,7 +36,7 @@
 				{% csrf_token %}
 				<button>Clear Session</button>
 			</form>
-            {% for i in request.session.word %}
+			{% for i in request.session.word %}
 				<p><span class="{{i.class1}} {{i.class2}}">{{i.word}}</span>
 				{{i.display}}</p>
 			{% endfor %}

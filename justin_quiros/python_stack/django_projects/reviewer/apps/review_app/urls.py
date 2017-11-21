@@ -14,3 +14,4 @@ urlpatterns = [
   url(r'^delete/(?P<review_id>\d+)', views.delete),
   url(r'^logout$', views.logout),
 ]
+

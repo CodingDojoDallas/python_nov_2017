@@ -27,7 +27,7 @@ def register(request):
 
 def login(request):
 	errors = User.objects.login_validation(request.POST)
-	if len(errors) != 0:
+	if len(errors) != 0: 
 		request.session['errors'] = errors
 		return redirect('/')
 	else:
@@ -46,7 +46,8 @@ def books(request):
 
 def add(request):
 	context = {
-	"authors": Author.objects.all()
+	"authors": Author.objects.all(),
+	"errors": request.session['errors']
 	}
 	return render(request, 'review_app/add.html', context)
 
@@ -69,10 +70,11 @@ def add_review(request, book_id):
 	return redirect('/books/{}'.format(book_id))
 
 def create(request):
-	error = Review.objects.review_validation(request.POST)
-	if error:
-		for e in error:
-			messages.error(request, e)
+	errors = Review.objects.review_validation(request.POST)
+
+	if len(errors) != 0: 
+		request.session['errors'] = errors
+		return redirect('/books/add')
 	else:
 		book_id = Review.objects.create_review(request.POST, request.session['user_id']).book.id
 	return redirect('/books/{}'.format(book_id))
@@ -86,11 +88,12 @@ def review(request, book_id):
 def user(request, user_id):
 
 	user = User.objects.get(id=user_id)
-	print user
 	unique_ids = user.reviews_left.all().values("book").distinct()
 	unique_books = []
+
 	for book in unique_ids:
 		unique_books.append(Book.objects.get(id=book['book']))
+ 
 	context = {
 		'user': user,
 		'unique_book_reviews': unique_books

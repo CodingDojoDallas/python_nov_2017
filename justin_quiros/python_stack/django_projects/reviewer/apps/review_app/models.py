@@ -73,12 +73,17 @@ class User(models.Model):
 	updated_at = models.DateTimeField(auto_now=True)
 	objects = UserManager()
 
+
 class Author(models.Model):
 	name = models.CharField(max_length=255)
 
 class Book(models.Model):
 	title = models.CharField(max_length=255)
 	author = models.ForeignKey(Author, related_name="books")
+
+
+
+
 
 
 
@@ -89,7 +94,7 @@ class ReviewManager(models.Manager):
 		if len(form_data['title']) < 1 or len(form_data['review']) < 1:
 			errors.append('Title/Review fields are required')
 		if not "author" in form_data and len(form_data['new_author']) < 3:
-			rrors.append('Author names must be atleast 3 letters.')
+			errors.append('Author names must be atleast 3 letters.')
 
 		if "author" in form_data and len(form_data['new_author']) > 0 and len(form_data['new_author']) < 3:
 			errors.append('Author names must be atleast 3 letters.')

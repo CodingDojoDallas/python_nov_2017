@@ -28,7 +28,6 @@ def process(request):
 
 	return redirect('/display')	
 
-
 def display(request):
 	return redirect('/')
 
