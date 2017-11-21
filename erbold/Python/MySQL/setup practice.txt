@@ -1,0 +1,5 @@
+USE lead_gen_business;
+SELECT * FROM billing;
+INSERT INTO billing (amount, charged_datetime, clients_id) VALUES ('A milly', 200, 25);
+DELETE FROM billing WHERE id = 1;
+
