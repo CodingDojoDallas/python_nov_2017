@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page1</title>
+
+</head>
+<body>
+	<div class="message">
+		<h1>Your email is VALID</h1>
+	</div>
+	<h2>Email:</h2>
+	<form action="/delete" method="POST">
+		<table>
+			{% for email in data %}
+				<tr>
+					<td>{{email.email}}</td>
+					<td>{{email.date}}</td>
+					<td><button name="id" value="{{ email.id }}">Delete</button></td>
+				</tr>
+			{% endfor %}
+		</table>
+	</form>
+
+</body>
+</html>
