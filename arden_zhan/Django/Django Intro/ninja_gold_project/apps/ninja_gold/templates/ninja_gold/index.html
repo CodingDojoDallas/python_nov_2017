@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Ninja Gold</title>
+    {% load static %}
+    <!-- The line above tells Django to be ready to listen for static files -->
+    <link rel="stylesheet" href="{% static 'ninja_gold/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+
+<body>
+    <h1>Ninja Gold</h1>
+    <h2>Your Gold: {{ request.session.total_gold }}</h2>
+
+    {% for location in locations %}
+        <form action='/process_money/{{ location.name }}' method='post'>
+            {% csrf_token %}
+            <h2>{{ location.name }}</h2>
+            <p>
+                {% if location.low < 0 %}
+                    (earns / takes 0-{{ location.high }} golds)
+                {% else %}
+                    (earns {{ location.low }}-{{ location.high }} golds)
+                {% endif %}
+            </p>
+            <input type='submit' value='Find Gold!'>
+        </form>
+    {% endfor %}
+    
+    <div class='activities'>
+    Activities:
+        <div class='activities_info'>
+        {% if request.session.activities %}
+            {% for activity in request.session.activities %}
+                {% if activity.gold_change > 0 %}
+                    <span class="green">Earned {{ activity.gold_change }} golds from the {{ activity.location_name }}! ({{ activity.time }})</span><br>
+                {% else %}
+                    <span class="red">Entered a casino and lost {{ activity.gold_change }} golds... Ouch.. ({{ activity.time }})</span><br>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+        </div>
+    </div>
+
+    <p>
+        <a href='/reset'>Reset</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
+.gold_count {
+    display: block;
+}
+
+.activities {
+    margin-top: 20px;
+    display: block;
+}
+
+.activities_info {
+    height: 150px;
+    width: 600px;
+    overflow-y: scroll;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid black;
+}

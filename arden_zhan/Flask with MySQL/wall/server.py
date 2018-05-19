@@ -31,16 +31,19 @@ def wall():
     user_data = {'id': session['userid']}
     user = mysql.query_db(user_query, user_data)
 
-    messages_query = "SELECT users.id, messages.id, first_name, last_name, message, messages.created_at FROM users JOIN messages ON users.id = messages.user_id ORDER BY messages.created_at DESC"
+    messages_query = "SELECT users.id, messages.id, first_name, last_name, message, DATE_FORMAT(messages.created_at, '%M %d, %Y') AS created FROM users JOIN messages ON users.id = messages.user_id ORDER BY messages.created_at DESC"
     messages = mysql.query_db(messages_query)
 
-    comments_query = "SELECT messages.id AS message_id, comments.id AS comment_id, first_name, last_name, comment, comments.created_at FROM comments JOIN messages ON comments.message_id = messages.id JOIN users ON comments.user_id = users.id ORDER BY comments.created_at DESC"
-    comments = mysql.query_db(comments_query)
+    for message in messages:
+        msg_id = message['id']
+        comments_query = "SELECT messages.id AS message_id, comments.id AS comment_id, first_name, last_name, comment, DATE_FORMAT(comments.created_at, '%b %d, %Y') AS created FROM comments JOIN messages ON comments.message_id = messages.id JOIN users ON comments.user_id = users.id WHERE messages.id = :msg_id ORDER BY comments.created_at"
+        comments_data = {'msg_id': msg_id}
+        comments_for_message = mysql.query_db(comments_query, comments_data)
+        message['comments'] = comments_for_message
 
     return render_template('wall.html', 
         first_name = user[0]['first_name'],
-        all_messages = messages,
-        all_comments = comments)
+        all_messages = messages)
 
 @app.route('/message', methods=['POST'])
 def message():
@@ -133,7 +136,6 @@ def login():
         encrypted_password = md5.new(password + user[0]['salt']).hexdigest()
         if user[0]['hashed_pw'] == encrypted_password: #successful login
             session['userid'] = user[0]['id']
-            print session['userid']
             return redirect('/wall')
         else: #invalid password!
             flash("Invalid login password!")

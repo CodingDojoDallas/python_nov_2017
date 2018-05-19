@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form - Result</title>
+    {% load static %}
+    <!-- The line above tells Django to be ready to listen for static files -->
+    <link rel="stylesheet" href="{% static 'surveys/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    <!-- Put the static files in the static folder inside your app.  Django collects files within all static folders and puts them within a single folder -->    
+</head>
+<body>
+    <h3>Thanks for submitting this form! You have submitted this form {{ request.session.counter }} times now.</h3>
+
+    <div class='results'>
+        <h4>Submitted Information</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{ request.session.name }}</td>
+                </tr>
+                <tr>
+                    <td>Dojo Location:</td>
+                    <td>{{ request.session.location }}</td>
+                </tr>
+                <tr>
+                    <td>Favorite Language:</td>
+                    <td>{{ request.session.language }}</td>
+                </tr>
+                <tr>
+                    <td>Comment:</td>
+                    <td>{{ request.session.comment }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <a href='/'>Submit Again</a>
+
+</body>
+</html>

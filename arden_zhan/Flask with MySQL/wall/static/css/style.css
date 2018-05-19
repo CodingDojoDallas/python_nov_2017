@@ -1,17 +1,25 @@
 .message {
     display: inline-block;
-    border: solid 2px black;
     text-align: right;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-left: 10px;
     padding: 10px;
 }
 
-h2 {
-    margin-top: 100px;
+form {
+    display: block;
 }
 
 textarea {
     width: 500px;
     height: 50px;
+}
+
+h1 {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.commentarea {
+    margin-left: 200px;
 }

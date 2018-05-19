@@ -1,0 +1,35 @@
+form {
+    display: inline-block;
+    width: 400px;
+}
+
+.results {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+}
+
+h1 {
+    border-bottom: 2px solid black;
+    width: 800px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.big {
+    font-size: 2em;
+}
