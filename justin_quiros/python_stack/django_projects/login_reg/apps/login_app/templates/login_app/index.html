@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Login and Registration</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'login_app/css/style.css' %}">
+</head>
+<body>
+
+	<h1>Registration</h1>
+	{% for error in errors %}
+		{{error}}
+	{% endfor %}
+	<form action="courses/register" method="post">
+		{% csrf_token %}
+		<label for="first_name">First Name:</label>
+		<input type="text" name="first_name"> 
+		<br>
+		<br>
+		<label for="last_name">Last Name:</label>
+		<input type="text" name="last_name"> 
+		<br>
+		<br>
+		<label for="email">Email:</label>
+		<input type="text" name="email">
+		<br>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" name="password"> 
+		<br>
+		<br>
+		<label for="conf_password">Confirm pw:</label>
+		<input type="password" name="conf_password"> 				
+		<br>
+		<br>
+		<input type="submit" name="submit" value="Register">
+	</form>
+	<br>
+	<h1>Login</h1>
+	<form action="courses/login" method="post">
+		{% csrf_token %}
+		<label for="email">Email:</label>
+		<input type="text" name="email">
+		<br>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" name="password">
+		<br>
+		<br>
+		<input type="submit" name="submit" value="Login">
+	</form>
+</body>
+</html>

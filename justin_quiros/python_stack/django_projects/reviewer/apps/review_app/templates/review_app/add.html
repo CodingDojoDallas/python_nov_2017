@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>Add Book and Review</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'review_app/css/style.css' %}">
+</head>
+<body class="container">
+	<h3>Add a New Book and a Review</h3>
+	<div class="review">
+		{% for error in errors %}
+			{{error}}
+		{% endfor %}
+		<h4>Register</h4>
+		<form action="/create" method="post">
+			{% csrf_token %}
+			<label for="title">Book Title:</label>
+			<input type="text" name="title"> 
+			<br>
+			<br>
+			<label for="author">Author</label>
+			Choose from the list:
+			<select name="author">
+				{% for author in authors %}
+					<option value="{{author.id}}">{{author.name}}</option>
+				{% endfor %}
+			</select>
+			<br>
+			Or add a new author:
+			<input type="text" name="new_author">
+			<label for="review">Review:</label>
+			<textarea name="review"></textarea>
+			<label for="rating">Rating:</label>
+			<select name="rating">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+			<input type="submit" name="Add Book and Review">
+		</form>
+	</div>
+</body>
+</html>
